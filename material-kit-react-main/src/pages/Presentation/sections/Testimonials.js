@@ -54,22 +54,36 @@ function Information() {
           </MKTypography>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }}>
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={10} md={3} lg={4}>
             <DefaultReviewCard
-              name="Nick Willever"
+              name="Recent Conference Proceedings"
               date="1 day ago"
-              review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
+              review=<ul><li>This is an excellent product, the documentation is excellent and helped me get things done more efficiently.</li></ul>
+              r1=<ul><li><a href="https://ubisysresearch.github.io/publication/molevolvr_webapp/" style={{color: "blue"}}>Demonstration of LegalHelper</a>: A Low-cost tool for Smart Translation and Creation of Legal Contracts</li></ul>
+              r2=<ul><li><a href="https://ubisysresearch.github.io/publication/molevolvr_webapp/" style={{color: "blue"}}>enVolve+</a>: Inertial Sensing to Reinforce Involvement of Silent Listeners during an Online Interaction</li></ul>
+              r3=<ul><li>crossTrustChain: CrossChain Interoperability using Multivariate Trust Models</li></ul>
+             r4=  <a href="https://sites.google.com/site/suchetana0116/publications" style={{ color: "blue", textDecoration: "underline" }}>
+    SEE ALL PUBLICATIONS→
+  </a>
+
+            />
+            <DefaultReviewCard
+              review="Demonstration of LegalHelper: A Low-cost tool for Smart Translation and Creation of Legal Contracts"
               rating={5}
             />
           </Grid>
+         
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
               color="info"
-              name="Shailesh Kushwaha"
+              name="Recent Journal Publications"
               date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
-              rating={5}
-            />
+              review=<ul><li><a href="https://arxiv.org/abs/2208.01394" style={{color :"black"}}>UniPreCIS </a>: A data pre-processing solution for collocated services on shared IoT</li></ul>
+              r1=<ul><li><a href="https://www.sciencedirect.com/science/article/pii/S1570870522002165?via%3Dihub" style={{color :"black"}}>A survey of mobility aware Multi-access Edge Computing</a>: Challenges, use cases and future directions</li></ul>
+              r2=<ul><li><a href="https://linkinghub.elsevier.com/retrieve/pii/S0167739X22001029" style={{color :"black"}}>Where Do All My Smart Home Data Go? Context-aware Data Generation and Forwarding for Edge-based Microservices over Shared IoT Infrastructure</a></li></ul>
+              r3=<ul><li><a href="https://ubisysresearch.github.io/publication/molevolvr_webapp/" style={{color :"black"}}>Deep Unsupervised Methods towards Behavior Analysis in Ubiquitous Sensor Data</a></li></ul>
+              r4=<a href="https://sites.google.com/site/suchetana0116/publications" style={{ color: "black", textDecoration: "underline" }}>SEE ALL PUBLICATIONS→</a>
+          />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard

@@ -24,7 +24,7 @@ import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
 import MKTypography from "components/MKTypography";
 
-function DefaultReviewCard({ color, image, name, date, review, rating }) {
+function DefaultReviewCard({ color, image, name, date, review, rating ,r1,r2,r3,r4,r5,r6}) {
   const ratings = {
     0.5: [
       <Icon key={1}>star_outline</Icon>,
@@ -133,7 +133,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           color={color === "transparent" || color === "light" ? "text" : "white"}
           sx={{ display: "flex", alignItems: "center" }}
         >
-          <Icon>schedule</Icon>&nbsp;
+          {/* <Icon>schedule</Icon>&nbsp; */}
           {date}
         </MKTypography>
       </MKBox>
@@ -142,7 +142,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
         color={color === "transparent" || color === "light" ? "text" : "white"}
         my={4}
       >
-        &quot;{review}&quot;
+        {review}{r1}{r2}{r3}{r4}{r5}{r6}
       </MKTypography>
       <MKTypography
         variant="h4"
@@ -186,6 +186,12 @@ DefaultReviewCard.propTypes = {
   name: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   review: PropTypes.string.isRequired,
+  r1:PropTypes.string.isRequired,
+  r2:PropTypes.string.isRequired,
+  r3:PropTypes.string.isRequired,
+  r4:PropTypes.string.isRequired,
+  r5:PropTypes.string.isRequired,
+  r6:PropTypes.string.isRequired,
   rating: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
 };
 
