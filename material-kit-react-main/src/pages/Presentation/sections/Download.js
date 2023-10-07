@@ -25,6 +25,38 @@ import MKTypography from "components/MKTypography";
 
 // Images
 import bgImage from "assets/images/shapes/waves-white.svg";
+import React from "react";
+
+function WhiteBox() {
+  const boxStyle = {
+    backgroundColor: "white",
+    padding: "20px",
+    borderRadius: "4px",
+    position: "relative",
+    width: "500px"
+    // To enable positioning of the image
+  };
+
+  const imageStyle = {
+    position: "relative",
+    top: "-10px",
+    left: "-1",
+    width: "50px", 
+    height: "50px", 
+    backgroundColor: "lightgray", 
+  };
+  return (
+    <div>
+      <div style={boxStyle}>
+        {/* Square space for the image */}
+        <div style={imageStyle}></div>
+        {/* Content inside the white box */}
+        <p>This is a white box with content inside.</p>
+      </div>
+    </div>
+  );
+}
+
 
 function Download() {
   return (
@@ -47,7 +79,9 @@ function Download() {
           zIndex={1}
           opacity={0.2}
         />
+       
         <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
+        <WhiteBox></WhiteBox>
           <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
             <MKTypography variant="h3" color="white">
               Do you love this awesome
@@ -77,8 +111,30 @@ function Download() {
         <Grid container item xs={6} mx="auto">
           <MKBox textAlign="center">
             <MKTypography variant="h3" mt={6} mb={3}>
-              Available on these technologies
+            Courses
             </MKTypography>
+            
+<MKTypography variant="h5" mt={6} mb={3}  style={{ fontWeight: 'normal' }}>
+<MKBox textAlign="left"></MKBox>
+            Undergraduate Courses
+            <ul>
+          
+<li>Operating Systems [Monsoon 2021, Spring 2021, Monsoon 2022]</li>
+<li>Computer Networks [Monsoon 2020]</li>
+<li>Operating Systems [Spring2020]</li>
+<li>Algorithms [Monsoon 2019, 2018]</li>
+<li>Ubiquitous Computing [Spring 2018, 2017]</li>
+<li>Distributed Systems [Monsoon 2017]</li></ul>
+</MKTypography>
+
+<div>
+<ul>
+<li>Postgraduate Courses</li>
+<li>Computer Network Protocols and Applications [Monsoon 2022]</li>
+<li>Mobile and Pervasive Computing [Spring 2020]</li>
+Object Oriented Programming
+Advanced Operating Systems</ul>
+</div>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={4} lg={2}>
                 <Tooltip title="Bootstrap 5 - Most popular front-end component library">
