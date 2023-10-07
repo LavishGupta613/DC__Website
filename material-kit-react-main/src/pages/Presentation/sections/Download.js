@@ -20,42 +20,13 @@ import Tooltip from "@mui/material/Tooltip";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
 import bgImage from "assets/images/shapes/waves-white.svg";
 import React from "react";
-
-function WhiteBox() {
-  const boxStyle = {
-    backgroundColor: "white",
-    padding: "20px",
-    borderRadius: "4px",
-    position: "relative",
-    width: "500px"
-    // To enable positioning of the image
-  };
-
-  const imageStyle = {
-    position: "relative",
-    top: "-10px",
-    left: "-1",
-    width: "50px", 
-    height: "50px", 
-    backgroundColor: "lightgray", 
-  };
-  return (
-    <div>
-      <div style={boxStyle}>
-        {/* Square space for the image */}
-        <div style={imageStyle}></div>
-        {/* Content inside the white box */}
-        <p>This is a white box with content inside.</p>
-      </div>
-    </div>
-  );
-}
+import App from "./WhiteBox";
 
 
 function Download() {
@@ -81,8 +52,9 @@ function Download() {
         />
        
         <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
-        <WhiteBox></WhiteBox>
-          <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
+        <App></App>
+       
+          {/* <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
             <MKTypography variant="h3" color="white">
               Do you love this awesome
             </MKTypography>
@@ -104,7 +76,7 @@ function Download() {
             >
               Download Now
             </MKButton>
-          </Grid>
+          </Grid> */}
         </Container>
       </MKBox>
       <Container>
