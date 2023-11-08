@@ -17,7 +17,6 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 // import Divider from "@mui/material/Divider";
-
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 
@@ -36,6 +35,7 @@ function Counters() {
 
 The UbiSys lab consists of an interdisciplinary team of investigators that tackle challenging research problems both from building the enabling hardware and software systems to the deployment and evaluation of these technologies in real-world settings, especially around health. We collaborate very closely with IIT Professors in the Department of Computer Science & Engineering, and the Interdisciplinary department at the Indian Institute of Technology Jodhpur. In addition, we have close collaborations with many other institutions such as UMBC, IIT Kharagpur, IIT Bombay."
             />
+           
           {/* </Grid>
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />

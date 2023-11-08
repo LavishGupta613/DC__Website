@@ -22,17 +22,20 @@ import kamal from "./TA/kamalgola.jpeg";
 import mohik from "./TA/monikraj.jpeg";
 import priyal from "./TA/priyal.jpeg";
 import saha from "./TA/nayanita.jpeg";
+// import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
 
 export default [
   {
-    title: "",
+    title: "Meet the Team",
     items: [
       {
         image: garvit,
         name: "Garvit Chugh",
         count: "PhD Scholar",
         des: "Mobile and Pervasive Computing",
-        route: "https://chughgarvit.github.io/",
+       
+        // route: "https://chughgarvit.github.io/",
+        route : "/sections/page-sections/TA1",
 
       },
       {
@@ -40,49 +43,49 @@ export default [
         name: "Ananya Mondal",
         count: "PhD Scholar",
         des:"IoT, Sensing as a Software",
-        route: "https://www.linkedin.com/in/ananya-mondal-124b3690/",
+        route: "/sections/page-sections/TA2",
       },
       {
         image: osho,
         name: "Osho",
         count: "PhD Scholar",
         des: "Next-gen vehicular network",
-        route: "https://sites.google.com/iitj.ac.in/osho/about",
+        route:"/sections/page-sections/TA3",
       },
       {
         image: kong,
         name: "Kondagurle Sukitha",
         count: "PhD Scholar",
         des: "CPS Security",
-        route: "https://www.hackerearth.com/@sukitha2",
+        route: "/sections/page-sections/TA4",
       },
       {
         image:susmita,
         name: "Susmita Mondal",
         count: "PhD Scholar",
         des :"Blockchain, Cryptography and Network Security",
-        route: "https://www.linkedin.com/in/susmita-mondal-378949143/?originalSubdomain=in",
+        route: "/sections/page-sections/TA5",
       },
       {
         image: akhil,
         name: "Akhil Bhatia",
         count: "Part Time PhD Scholar",
         des: "Cloud and distributed computing",
-        route: "https://www.linkedin.com/in/akhilbhatia18/"
+        route: "/sections/page-sections/TA6"
       },
       {
         image: kamal,
         name: "Kamal Kumar Gola",
         count: "Part Time PhD Scholar",
         des : "Under water WSN",
-        route : "https://www.linkedin.com/in/kamal-kumar-gola-886692143/",
+        route : "/sections/page-sections/TA7",
       },
       {
         image: mohik,
         name: "Monik Raj Behera",
         count: "Executive MTech Scholar",
         des :"Federated Learning in a P2P",
-        route :"https://www.linkedin.com/in/bmonikraj/",
+        route :"/sections/page-sections/TA8",
       },
     ],
   },
@@ -95,14 +98,14 @@ export default [
         name: "Priyal Jain",
         count: "MTech Scholar",
         des :"CPS Security",
-        route: "https://www.linkedin.com/in/priyal-jain-9940b5171/",
+        route: "/sections/navigation/LA1",
       },
       {
         image: saha,
         name: "Nayanita Saha",
         count: "MTech Scholar",
         des: "IoT, Sensing as a Service",
-        route: "/https://ubisysresearch.github.io/",
+        route: "/sections/navigation/LA2",
       },
   
     ],
@@ -111,3 +114,4 @@ export default [
 
   
 ];
+

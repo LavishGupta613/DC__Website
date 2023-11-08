@@ -43,23 +43,60 @@ import Icon from "@mui/material/Icon";
 // import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
+
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 
+
+import PageHeadersPJ1 from "layouts/sections/elements/PJ1";
+import PageHeadersPJ2 from "layouts/sections/elements/PJ2";
+import PageHeadersPJ3 from "layouts/sections/elements/PJ3";
+import PageHeadersPJ4 from "layouts/sections/elements/PJ4";
+import PageHeadersPJ5 from "layouts/sections/elements/PJ5";
+import PageHeadersPJ6 from "layouts/sections/elements/PJ6";
+
+
+
 // Sections
+import PageHeaders1 from "layouts/sections/page-sections/TA1";
+import PageHeaders2 from "layouts/sections/page-sections/TA2";
+import PageHeaders3 from "layouts/sections/page-sections/TA3";
+import PageHeaders4 from "layouts/sections/page-sections/TA4";
+import PageHeaders5 from "layouts/sections/page-sections/TA5";
+import PageHeaders6 from "layouts/sections/page-sections/TA6";
+import PageHeaders7 from "layouts/sections/page-sections/TA7";
+import PageHeaders8 from "layouts/sections/page-sections/TA8";
+import PageHeaders9 from "layouts/sections/navigation/navbars";
+import PageHeaders10 from "layouts/sections/navigation/LA2";
+import PageHeadersR1 from "layouts/sections/page-sections/RC1";
+
+
+import PageHeadersRCP1 from "layouts/sections/elements/RCP";
+import PageHeadersRCP2 from "layouts/sections/elements/RCP1";
+import PageHeadersRCP3 from "layouts/sections/elements/RCP2";
+import PageHeadersRCP4 from "layouts/sections/elements/RCP3";
+
+
+import PageHeadersRJP2 from "layouts/sections/elements/RJP2";
+import PageHeadersRJP3 from "layouts/sections/elements/RJP3";
+import PageHeadersRJP4 from "layouts/sections/elements/RJP4";
+import PageHeadersJP1 from "layouts/sections/elements/RJP1";
+
+
 import PageHeaders from "layouts/sections/page-sections/page-headers";
 import Features from "layouts/sections/page-sections/featuers";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
+// import Navbars from "layouts/sections/navigation/navbars";
+// import NavTabs from "layouts/sections/navigation/nav-tabs";
 import Pagination from "layouts/sections/navigation/pagination";
 import Inputs from "layouts/sections/input-areas/inputs";
 import Forms from "layouts/sections/input-areas/forms";
 import Alerts from "layouts/sections/attention-catchers/alerts";
+import Alerts1 from "layouts/sections/attention-catchers/SA";
 import Modals from "layouts/sections/attention-catchers/modals";
 import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
-import Avatars from "layouts/sections/elements/avatars";
+// import Avatars from "layouts/sections/elements/avatars";
 import Badges from "layouts/sections/elements/badges";
 import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
 import Buttons from "layouts/sections/elements/buttons";
@@ -67,13 +104,16 @@ import Dropdowns from "layouts/sections/elements/dropdowns";
 import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
+import Solve from "pages/Presentation/sections/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index2";
+// import HeaderOneRCP1 from "layouts/sections/elements/RCP/components";
+// import HeaderOneR1 from "layouts/sections/page-sections/RC1/components";
 
 const routes = [
   {
     name: "Home",
     icon: <Icon>dasboard</Icon>,
     columns: 1,
-    rowsPerColumn: 2,
+    rowsPerColumn: 3,
     collapse: [
       {
         name: "landing pages",
@@ -108,11 +148,11 @@ const routes = [
     ],
   },
   {
-    name: "News",
+    name: "Team",
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
-        name: "page sections",
+        name: "TAs",
         description: "See all sections",
         dropdown: true,
         collapse: [
@@ -126,22 +166,64 @@ const routes = [
             route: "/sections/page-sections/features",
             component: <Features />,
           },
+          {
+            name: "Garvit Chugh",
+            route: "/sections/page-sections/TA1",
+            component: <PageHeaders1 />,
+          },
+          {
+            name: "Ananya Mondal",
+            route: "/sections/page-sections/TA2",
+            component: <PageHeaders2 />,
+          },
+          {
+            name: "Osho",
+            route: "/sections/page-sections/TA3",
+            component: <PageHeaders3 />,
+          },
+          {
+            name: "Kondagurle Sukitha",
+            route: "/sections/page-sections/TA4",
+            component: <PageHeaders4 />,
+          },
+          {
+            name: "Sushmita Mondal",
+            route: "/sections/page-sections/TA5",
+            component: <PageHeaders5 />,
+          },
+          {
+            name: "Akhil Bhatia",
+            route: "/sections/page-sections/TA6",
+            component: <PageHeaders6 />,
+          },
+          {
+            name: "Kamal Kumar Gola",
+            route: "/sections/page-sections/TA7",
+            component: <PageHeaders7 />,
+          },
+          {
+            name: "Monik Raj Behera",
+            route: "/sections/page-sections/TA8",
+            component: <PageHeaders8 />,
+          },
+          
+
         ],
       },
       {
-        name: "navigation",
-        description: "See all navigations",
+        name: "Lab Alumni",
+        description: "All Alumni",
         dropdown: true,
         collapse: [
           {
-            name: "navbars",
-            route: "/sections/navigation/navbars",
-            component: <Navbars />,
+            name: "Priyal Jain",
+            route: "/sections/navigation/LA1",
+            component: <PageHeaders9 />,
           },
           {
-            name: "nav tabs",
-            route: "/sections/navigation/nav-tabs",
-            component: <NavTabs />,
+            name: "Nayanita Saha",
+            route: "/sections/navigation/LA2",
+            component: <PageHeaders10 />,
           },
           {
             name: "pagination",
@@ -173,9 +255,14 @@ const routes = [
         dropdown: true,
         collapse: [
           {
-            name: "alerts",
+            name: "Alerts",
             route: "/sections/attention-catchers/alerts",
             component: <Alerts />,
+          },
+          {
+            name: "Alerts",
+            route: "/sections/attention-catchers/SA",
+            component: <Alerts1 />,
           },
           {
             name: "modals",
@@ -183,36 +270,83 @@ const routes = [
             component: <Modals />,
           },
           {
-            name: "tooltips & popovers",
+            name: "",
             route: "/sections/attention-catchers/tooltips-popovers",
             component: <TooltipsPopovers />,
           },
+          
         ],
       },
       {
         name: "elements",
-        description: "See all 32 examples",
-        dropdown: true,
+        description: "See all sections",
+        dropdown: false,
         collapse: [
           {
             name: "avatars",
-            route: "/sections/elements/avatars",
-            component: <Avatars />,
+            description: "See all sections",
+        
+            collapse:[
+              {
+                name: "Hello",
+                route: "/sections/page-sections/RC1",
+            component: <PageHeadersR1/>,
+
+              },
+              {
+                name: "Publication",
+                route: "/sections/elements/badges",
+                component: <Badges />,
+              },
+              {
+                name:"World",
+                route: "/sections/attention-catchers/tooltips-popovers",
+            component: <TooltipsPopovers />,
+              }
+            ]
+            // route: "/sections/elements/avatars",
+            // component: <Avatars />,
           },
+          {
+            name: "All Publication",
+            route: "/publication",
+            component: <Solve />,
+          },
+          
           {
             name: "badges",
             route: "/sections/elements/badges",
             component: <Badges />,
           },
           {
-            name: "breadcrumbs",
-            route: "/sections/elements/breadcrumbs",
-            component: <BreadcrumbsEl />,
+            name: "PJ1",
+            route: "/sections/elements/PJ1",
+            component: <PageHeadersPJ1 />,
           },
           {
-            name: "buttons",
-            route: "/sections/elements/buttons",
-            component: <Buttons />,
+            name: "PJ2",
+            route: "/sections/elements/PJ2",
+            component: <PageHeadersPJ2 />,
+          },
+          {
+            name: "PJ3",
+            route: "/sections/elements/PJ3",
+            component: <PageHeadersPJ3 />,
+          },
+          {
+            name: "PJ4",
+            route: "/sections/elements/PJ4",
+            component: <PageHeadersPJ4 />,
+          },
+          {
+            name: "PJ5",
+            route: "/sections/elements/PJ5",
+            component: <PageHeadersPJ5 />,
+          },
+          {
+            name: "PJ6",
+            route: "/sections/elements/PJ6",
+            component: <PageHeadersPJ6 />,
           },
           {
             name: "dropdowns",
@@ -234,18 +368,73 @@ const routes = [
             route: "/sections/elements/typography",
             component: <Typography />,
           },
+          {
+            name: "RCP1",
+            route: "/sections/elements/RCP",
+            component: <PageHeadersRCP1 />,
+          },
+          {
+            name: "RCP2",
+            route: "/sections/elements/RCP2",
+            component: <PageHeadersRCP2 />,
+          },
+          {
+            name: "RCP3",
+            route: "/sections/elements/RCP3",
+            component: <PageHeadersRCP3 />,
+          },
+          {
+            name: "RCP4",
+            route: "/sections/elements/RCP4",
+            component: <PageHeadersRCP4 />,
+          },
+          {
+            name: "RJP1",
+            route: "/sections/elements/RJP1",
+            component: <PageHeadersJP1 />,
+          },
+          {
+            name: "RJP2",
+            route: "/sections/elements/RJP2",
+            component: <PageHeadersRJP2 />,
+          },
+          {
+            name: "RJP3",
+            route: "/sections/elements/RJP3",
+            component: <PageHeadersRJP3 />,
+          },
+          {
+            name: "RJP4",
+            route: "/sections/elements/RJP3",
+            component: <PageHeadersRJP4 />,
+          },
+          {
+            name: "breadcrumbs",
+            route: "/sections/elements/breadcrumbs",
+            component: <BreadcrumbsEl />,
+          },
+          {
+            name: "buttons",
+            route: "/sections/elements/buttons",
+            component: <Buttons />,
+          },
         ],
       },
     ],
   },
   {
-    name: "Team",
+    name: "News",
     icon: <Icon>article</Icon>,
     collapse: [
       {
         name: "getting started",
         description: "All about overview, quick start, license and contents",
         href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+      },
+      {
+        name: <div><a href="./layouts/sections/elements/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications">Pun</a></div>,
+        description: "All about overview, quick start, license and contents",
+        // href: "/sections/elements/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications",
       },
       {
         name: "foundation",

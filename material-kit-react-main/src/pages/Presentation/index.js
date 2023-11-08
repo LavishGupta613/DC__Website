@@ -26,7 +26,7 @@ import MKSocialButton from "components/MKSocialButton";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+// import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import App from "./App";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
@@ -36,7 +36,7 @@ import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 //App
 
 // Routes
@@ -58,7 +58,8 @@ function Presentation() {
           color: "info",
         }}
         sticky
-      /><App></App>
+        
+      /><App ></App>
       {/* <MKBox
         minHeight="75vh"
         width="100%"
@@ -70,12 +71,14 @@ function Presentation() {
           placeItems: "center",
         }}
       >  */}
-        <Container>
+        <Container
+        >
           <Grid container item xs={12} lg={7} justifyContent="center" position="absolute" 
-           bottom ="200px" left="300px" mx="auto">
+           bottom ="200px" left="300px" mx="auto"
+           >
             <MKTypography 
               variant="h1"
-              color="white"
+              
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,8 +86,11 @@ function Presentation() {
                   fontSize: size["3x1"],
                 },
               })}
+              
             >
-              Welcome to UbiSys Research Lab!{" "}
+             <div style={{ color: "white" }}>Welcome to UbiSys Research Lab!</div>
+
+
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -113,54 +119,12 @@ function Presentation() {
         <Information />
         <DesignBlocks />
         <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
-        </Container>
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={20} lg={6}>
-              <FilledInfoCard
-                variant="gradient"
-                color="info"
-                icon="flag"
-                title=<h3>Few ongoing research efforts</h3>
-                description=<div><ul>
-                  <li >Understanding user behavior through inertial sensing</li>
-                  <li >Task offloading and microservices management in MEC</li>
-                  <li >Decentralized trust computation and reputation system in IoT and CPS</li>
-                  <li >Context aware data sourcing from extreme edge</li>
-                  <li >Situation-awareness in Connected and Autonomous vehicles</li>
-                  <li >IoT intervention in wild habitat monitoring</li>
-                  <li >Sensing as a service middleware for applications of human sensing</li>
-                </ul></div>
-               
-              />
-            </Grid>
-            <Grid item xs={12} lg={6}>
-              <FilledInfoCard
-                color="info"
-                icon=<i className="fas fa-book" style={{ marginRight: '5px' }}></i>
-                title=<h3>Education</h3>
-                description=<div>
-               <ul>
-               <i className="fas fa-graduation-cap" style={{ display: 'inline', marginRight: '5px' }}></i>
-<h4 style={{ display: 'inline' }}>PhD in Computer Science and Engineering, 2014</h4>
-
-
-<p>Indian Institute of Technology Guwahati | India</p>
-<i className="fas fa-graduation-cap" style={{ display: 'inline', marginRight: '5px' }}></i>
-<h4 style={{ display: 'inline' }}>MTech in Computer Science and Engineering, 2011</h4>
-
-<p>Indian Institute of Technology Guwahati | India</p>
-
-<i className="fas fa-graduation-cap" style={{ display: 'inline', marginRight: '5px' }}></i>
-<h4 style={{ display: 'inline' }}>
-BTech in Computer Science and Engineering, 2009</h4>
-
-<p>West Bengal University of Technology | India</p></ul></div>
-                
-              />
-            </Grid>
+        {/* <Container sx={{ mt: 6 }}>
+          {/* <BuiltByDevelopers /> 
+        </Container> */}
+     
+        
+            
             {/* <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
@@ -174,8 +138,7 @@ BTech in Computer Science and Engineering, 2009</h4>
                 }}
               />
             </Grid> */}
-          </Grid>
-        </Container>
+       
         <Testimonials />
         <Download />
         <MKBox pt={18} pb={6}>

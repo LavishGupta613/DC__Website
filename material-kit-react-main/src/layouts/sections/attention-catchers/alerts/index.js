@@ -26,7 +26,7 @@ import simpleAlertsCode from "layouts/sections/attention-catchers/alerts/compone
 function Alerts() {
   return (
     <BaseLayout
-      title="Alerts"
+      title="Student Accomplishments"
       breadcrumb={[
         { label: "Page Sections", route: "/sections/attention-catchers/alerts" },
         { label: "Alerts" },

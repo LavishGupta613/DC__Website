@@ -4,10 +4,13 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
+import DesignBlocks1 from "./DB";
+// import DesignBlocksData from "./data/designBlocksData";
+// import DesignBlocks from "./DesignBlocks";
 
 function PresentationPages() {
   return (
-    <MKBox component="section" py={14}>
+    <MKBox component="section" py={1}>
       <Container>
         <Grid
           container
@@ -134,8 +137,11 @@ function PresentationPages() {
             </MKTypography>
           </Grid>
         </Grid>
+      
       </Container>
+  <DesignBlocks1></DesignBlocks1>
     </MKBox>
+  
   );
 }
 // 2022

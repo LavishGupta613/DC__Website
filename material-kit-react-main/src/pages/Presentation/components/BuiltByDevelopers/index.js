@@ -18,14 +18,25 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import img from "./mam.jpeg";
+import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
+import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 function BuiltByDevelopers() {
-  const bgImage =
-    "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
+  // const bgImage =
+  //   "https://raw.githubusercontent.comcreativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
 
+
+  // const greyTextColor = {
+  //   color: 'grey',
+  //   textDecoration: 'none',
+  // };
+
+  // const blueLinkStyle = {
+  //   color: 'blue',
+  //   textDecoration: 'none',
+  // };
   return (
     <MKBox
       display="flex"
@@ -33,20 +44,12 @@ function BuiltByDevelopers() {
       borderRadius="xl"
       my={1}
       py={6}
-      sx={{
-        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-          `${linearGradient(
-            rgba(gradients.dark.main, 0.8),
-            rgba(gradients.dark.state, 0.8)
-          )}, url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      
     >
       <Container>
-        <Grid container item xs={12} lg={11} sx={{ ml: { xs: 1, lg: 6 } }}>
-        <Grid item xs={12} lg={6}>
-        <MKTypography variant="p" color="white" style={{ marginLeft: '10px' }}>
+        <Grid container item xs={12} lg={11} sx={{ ml: { xs: 1, lg: 6 } , marginTop: '1px' }}>
+        <Grid item xs={12} lg={4.5}>
+        <MKTypography variant="p" color="grey" style={{ marginLeft: '10px' , fontFamily : 'Roboto, sans-serif' }}>
         
             <img
                 src={img}
@@ -83,7 +86,7 @@ function BuiltByDevelopers() {
        <h1 style={{ cursor: 'pointer' }}>
   <span 
     style={{ 
-      color: 'white',
+      color: 'grey',
       textDecoration: 'none',
     }}
     onMouseOver={(e) => e.target.style.textDecoration = 'underline blue'} // Set underline color to blue on mouse over
@@ -121,7 +124,7 @@ function BuiltByDevelopers() {
           ><p style={{ cursor: 'pointer' }}>
  <span 
     style={{ 
-      color: 'white',
+      color: 'grey',
       textDecoration: 'none',
     }}
     onMouseOver={(e) => e.target.style.textDecoration = 'underline blue'} // Set underline color to blue on mouse over
@@ -149,7 +152,7 @@ function BuiltByDevelopers() {
   <i
     className="fab fa-linkedin"
     style={{
-      color: 'white',
+      color: 'grey',
       fontSize: '33px',
       verticalAlign: 'middle', 
       display: 'inline-block', 
@@ -176,7 +179,7 @@ function BuiltByDevelopers() {
   <i
     className="fa fa-graduation-cap"
     style={{
-      color: 'white',
+      color: 'grey',
       fontSize: '33px',
       verticalAlign: 'middle', 
       display: 'inline-block', 
@@ -203,7 +206,7 @@ function BuiltByDevelopers() {
   <i
     className="fab fa-researchgate"
     style={{
-      color: 'white',
+      color: 'grey',
       fontSize: '33px',
       verticalAlign: 'middle', 
       display: 'inline-block', 
@@ -230,7 +233,7 @@ function BuiltByDevelopers() {
   <i
     className="fas fa-address-book"
     style={{
-      color: 'white',
+      color: 'grey',
       fontSize: '33px',
       verticalAlign: 'middle', 
       display: 'inline-block', 
@@ -257,7 +260,7 @@ function BuiltByDevelopers() {
   <i
     className="fas fa-id-badge"
     style={{
-      color: 'white',
+      color: 'grey',
       fontSize: '33px',
       verticalAlign: 'middle', 
       display: 'inline-block', 
@@ -284,7 +287,7 @@ function BuiltByDevelopers() {
   <i
     className="fas fa-database"
     style={{
-      color: 'white',
+      color: 'grey',
       fontSize: '33px',
       verticalAlign: 'middle', 
       display: 'inline-block', 
@@ -301,13 +304,84 @@ function BuiltByDevelopers() {
 
         </MKTypography>
         </Grid>
-        <Grid item xs={12} lg={6}>
-        <MKTypography variant="p" color="white" style={{ marginLeft: '10px' }}>
-        I am an Assistant Professor in the Department of <a href="https://cse.iitj.ac.in/"  style={{ color: 'green' }}>Computer Science and Engineering</a>,<a href="https://www.iitj.ac.in/" style={{color : 'green'}}> Indian Institute of Technology, Jodhpur </a>Since December 2020. My research interests are broadly in the domains of Ubiquitous Computing, IoT and Edge Computing, Wireless sensor and mobile ad hoc networks, Distributed Systems and Smart city applications. To know more about the work, please explore <a href="https://sites.google.com/site/suchetana0116/research" style={{color: 'green'}}>this page</a>. I am one of the founding members of UbiSys Research Group, in the department and actively involved in interdisciplinary research through <a href="https://iitj.ac.in/shc/" style={{color : 'green'}}>IDRP - Smart Healthcare</a>, <a href="https://iitj.ac.in/iot/" style={{color:'green'}}>IDRP - IoT & Applications</a> and<a href="https://iitj.ac.in/CETSD/" style={{color : 'green'}}> Centre of Emerging Technologies for Sustainable Development (CETSD)</a>. Currently, I am working as an Area Editor of Ad Hoc Networks journal, Elsevier. Also I am involved in organizing many conferences including IEEE ANTS 2021 (as Tutorial Co-chair), IEEE LCN 2021, 2022, 2023 (as TPC member), COMSNETS 2022, 2023 (as TPC member), ICDCN 2023 (as Workshop Co-chair) to name a few.        </MKTypography></Grid>
+        <Grid item xs={1} lg={7.5}>
+        <MKTypography variant="p" color="grey" style={{ marginLeft: '1px', fontFamily: 'Roboto, sans-serif' }}>
+        <span 
+    style={{ 
+      color: 'grey',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      fontSize : '29px',
+      marginLeft: '14px',
+      marginBottom: '-10px'
+    }}
+  >
+    PI
+  </span>
+      <DefaultCounterCard description=<div style={{fontSize : '18px' , textAlign: 'left' }}>
+     I am an Assistant Professor in the Department of <a href="https://cse.iitj.ac.in/"  style={{ color: 'blue' }}>Computer Science and Engineering</a>,<a href="https://www.iitj.ac.in/" style={{color : 'blue'}}> Indian Institute of Technology, Jodhpur </a>Since December 2020. My research interests are broadly in the domains of Ubiquitous Computing, IoT and Edge Computing, Wireless sensor and mobile ad hoc networks, Distributed Systems and Smart city applications. To know more about the work, please explore <a href="https://sites.google.com/site/suchetana0116/research" style={{color: 'blue'}}>this page</a>. I am one of the founding members of UbiSys Research Group, in the department and actively involved in interdisciplinary research through <a href="https://iitj.ac.in/shc/" style={{color : 'blue'}}>IDRP - Smart Healthcare</a>, <a href="https://iitj.ac.in/iot/" style={{color:'blue'}}>IDRP - IoT & Applications</a> and<a href="https://iitj.ac.in/CETSD/" style={{color : 'blue'}}> Centre of Emerging Technologies for Sustainable Development (CETSD)</a>. Currently, I am working as an Area Editor of Ad Hoc Networks journal, Elsevier. Also I am involved in organizing many conferences including IEEE ANTS 2021 (as Tutorial Co-chair), IEEE LCN 2021, 2022, 2023 (as TPC member), COMSNETS 2022, 2023 (as TPC member), ICDCN 2023 (as Workshop Co-chair) to name a few. </div>
+      >    </DefaultCounterCard>  </MKTypography></Grid>
         </Grid>
-     
-      
-      </Container>
+        <br></br>
+        <Grid container spacing={3}>
+            <Grid item xs={20} lg={6}>
+              <FilledInfoCard
+                variant="gradient"
+                color="info"
+                icon="flag"
+                title=<h3>Few ongoing research efforts</h3>
+                description=<div><ul>
+                  <li >Understanding user behavior through inertial sensing</li>
+                  <li >Task offloading and microservices management in MEC</li>
+                  <li >Decentralized trust computation and reputation system in IoT and CPS</li>
+                  <li >Context aware data sourcing from extreme edge</li>
+                  <li >Situation-awareness in Connected and Autonomous vehicles</li>
+                  <li >IoT intervention in wild habitat monitoring</li>
+                  <li >Sensing as a service middleware for applications of human sensing</li>
+                </ul></div>
+               
+              />
+            </Grid>
+            <Grid item xs={12} lg={6}>
+              <FilledInfoCard
+                color="info"
+                icon=<i className="fas fa-book" style={{ marginRight: '5px' }}></i>
+                title=<h3>Education</h3>
+                description=<div>
+               <ul>
+               <i className="fas fa-graduation-cap" style={{ display: 'inline', marginRight: '5px' }}></i>
+<h4 style={{ display: 'inline' }}>PhD in Computer Science and Engineering, 2014</h4>
+
+
+<p>Indian Institute of Technology Guwahati | India</p>
+<i className="fas fa-graduation-cap" style={{ display: 'inline', marginRight: '5px' }}></i>
+<h4 style={{ display: 'inline' }}>MTech in Computer Science and Engineering, 2011</h4>
+
+<p>Indian Institute of Technology Guwahati | India</p>
+
+<i className="fas fa-graduation-cap" style={{ display: 'inline', marginRight: '5px' }}></i>
+<h4 style={{ display: 'inline' }}>
+BTech in Computer Science and Engineering, 2009</h4>
+
+<p>West Bengal University of Technology | India</p></ul></div>
+                
+              />
+              
+            </Grid>
+            {/* <Grid item xs={12} lg={4}>
+              <FilledInfoCard
+                color="info"
+                icon="apps"
+                title="Components"
+                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                action={{
+                  type: "external",
+                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+                  label: "Read more",
+                }}
+              />
+            </Grid> */}
+          </Grid>      </Container>
     </MKBox>
   );
 }
