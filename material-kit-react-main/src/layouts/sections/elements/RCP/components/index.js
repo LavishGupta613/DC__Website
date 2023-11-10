@@ -156,7 +156,7 @@ function HeaderOneRCP1() {
             `${linearGradient(
               rgba(gradients.dark.main, 0.5),
               rgba(gradients.dark.state, 0.5)
-            )}, url("https://iitj.ac.in/techscape/vol04/issue01/images/15%20Years%20of%20IIT%20Jodhpur_01082023.jpg")`,
+            )}, url("https://cdn.cseindia.org/gic/24.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

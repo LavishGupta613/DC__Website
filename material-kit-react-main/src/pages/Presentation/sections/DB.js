@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link ,Route ,Routes} from 'react-router-dom'; // Remove the unnecessary 'Route' and 'Routes' imports
+import { Link } from 'react-router-dom'; // Remove the unnecessary 'Route' and 'Routes' imports
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
-import ExampleCard from "pages/Presentation/components/ExampleCard";
+import ExampleCard1 from "pages/Presentation/components/ExampleCard/index1";
 import data1 from './data';
 
 
@@ -22,27 +22,31 @@ function DesignBlocks1() {
       <Grid item xs={2} lg={12}>
         <Grid container spacing={3}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={1} md={3} sx={{ mb: 2 }} key={name}>
+            <Grid item xs={4} md={7} sx={{ mb: -5 }} key={name}>
               <Link to={route}>
-                <ExampleCard image={image} name={name} count={count} des={des} pro={pro} />
+                <ExampleCard1 image={image} name={name} count={count} des={des} pro={pro} />
               </Link>
             </Grid>
           ))}
         </Grid>
+        <a href="http://127.0.0.1:3001/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html" style={{ textDecoration: 'underline' }}>
+          See All Publications
+         
+        </a>
       </Grid>
       <div style={{ textAlign: 'center' }}>
-        <Routes>
-          <Route path='/publication' >dfghjk</Route>
-        </Routes>
-        <a href="http://127.0.0.1:3001/material-kit-react-main/src/layouts/sections/elements/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index1.html" style={{ textDecoration: 'underline' }}>See All Publications</a>
+        
+        <a href="http://127.0.0.1:3001/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html" style={{ textDecoration: 'underline' }}>
+          See All Publications
+         
+        </a>
       </div>
     </Grid>
   ));
 
   return (
-    <MKBox component="section" my={-20} py={6}>
+    <MKBox component="section" my={-15} py={6}>
       <Container>
-     
         <Grid
           container
           item
@@ -55,6 +59,7 @@ function DesignBlocks1() {
           <MKBadge variant="contained" color="info" container sx={{ mb: 2 }} />
         </Grid>
       </Container>
+      
       <Container sx={{ mt: 6 }}>{renderData}</Container>
     </MKBox>
   );
