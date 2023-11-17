@@ -21,8 +21,33 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import HeaderOne6 from "./components";
 // // PageHeaders page components code
 import headerOneCode from "../page-headers/components/HeaderOne/code";
-
+import TeacherAssistantDetails from "../TADetails";
 function PageHeaders6() {
+  const accomplishmentsData = (
+    <div>
+      <ul>
+        <li>Samart K*, Tuyishime P*, Krishnan A#, Ravi J#. Reconciling multiple connectivity scores for drug repurposing. Briefings in Bioinformatics. 2021 DOI | Live doc | GitHub</li>
+        <li>MSU College of Natural Science Scholarships for Spring 2020, Summer 2020, Fall 2020, Spring 2021, Fall 2021</li>
+        <li>L.C. Plant Mathematics Award 2020, MSU Department of Mathematics</li>
+      </ul>
+    </div>
+  );
+
+  const educationData = (
+    <div>
+      <ul>
+        <li>PhD in Computational Bioscience, 2022– University of Colorado Anschutz Medical Campus</li>
+        <li>B.Sc. in Computational Mathematics; Computational Math Science and Engineering, 2022, Michigan State University</li>
+      </ul>
+    </div>);
+    const publications = (
+      <div>
+        <ul>
+          <li>PhD in Computational Bioscience, 2022– University of Colorado Anschutz Medical Campus</li>
+          <li>B.Sc. in Computational Mathematics; Computational Math Science and Engineering, 2022, Michigan State University</li>
+        </ul>
+      </div>
+  );
   return (
     
     <BaseLayout
@@ -35,6 +60,7 @@ function PageHeaders6() {
       <View title="Header 1" code={headerOneCode} height="40rem">
         <HeaderOne6 />
       </View>
+      <TeacherAssistantDetails accomplishments={accomplishmentsData} education={educationData} publications={publications} />
     </BaseLayout>
   );
 }

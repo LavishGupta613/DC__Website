@@ -29,6 +29,7 @@ import MKTypography from "components/MKTypography";
 
 function HeaderOne1() {
   return (
+    
     <MKBox component="header" position="relative" height="100%">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
         <Container>
@@ -187,9 +188,13 @@ function HeaderOne1() {
               </MKButton>
             </Stack>
           </Grid>
+          
         </Container>
+        
       </MKBox>
+      
     </MKBox>
+    
   );
 }
 
