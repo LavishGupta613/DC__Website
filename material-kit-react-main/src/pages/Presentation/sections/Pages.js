@@ -24,7 +24,7 @@ function PresentationPages() {
           <MKBadge
             variant="contained"
             color="info"
-            badgeContent="boost creativity"
+           
             container
             sx={{ mb: 1 }}
           />

@@ -20,9 +20,9 @@ function DesignBlocks1() {
         </MKBox>
       </Grid>
       <Grid item xs={2} lg={12}>
-        <Grid container spacing={3}>
+        <Grid container spacing={-10}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={4} md={7} sx={{ mb: -5 }} key={name}>
+            <Grid item xs={4} md={7} sx={{ mb: -7 }} key={name}>
               <Link to={route}>
                 <ExampleCard1 image={image} name={name} count={count} des={des} pro={pro} />
               </Link>
@@ -50,7 +50,7 @@ function DesignBlocks1() {
         <Grid
           container
           item
-          xs={1}
+          xs={0}
           lg={9}
           flexDirection="column"
           alignItems="center"
@@ -60,7 +60,7 @@ function DesignBlocks1() {
         </Grid>
       </Container>
       
-      <Container sx={{ mt: 6 }}>{renderData}</Container>
+      <Container sx={{ mt: 3 }}>{renderData}</Container>
     </MKBox>
   );
 }
