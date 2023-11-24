@@ -28,8 +28,8 @@ import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // @mui material components
 import Grid from "@mui/material/Grid";
 import AppBar from "@mui/material/AppBar";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+// import Tabs from "@mui/material/Tabs";
+// import Tab from "@mui/material/Tab";
 import Slide from "@mui/material/Slide";
 
 // Material Kit 2 React components
@@ -44,10 +44,10 @@ import colors from "assets/theme/base/colors";
 function View({ children, code, title, height, ...rest }) {
   const { grey } = colors;
 
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab] = useState(0);
   const [success, setSuccess] = useState(false);
 
-  const handleTabType = (event, newValue) => setActiveTab(newValue);
+  // const handleTabType = (event, newValue) => setActiveTab(newValue);
 
   useEffect(() => {
     setTimeout(() => setSuccess(false), 3000);
@@ -78,32 +78,7 @@ function View({ children, code, title, height, ...rest }) {
           </Grid>
           <Grid item xs={12} lg={3}>
             <AppBar position="static">
-              <Tabs value={activeTab} onChange={handleTabType}>
-                <Tab
-                  icon={
-                    <MKBox
-                      component="i"
-                      color="dark"
-                      mr={1.25}
-                      sx={{ fontSize: ({ typography: { size } }) => size.sm }}
-                      className="fas fa-desktop"
-                    />
-                  }
-                  label="Preview"
-                />
-                <Tab
-                  icon={
-                    <MKBox
-                      component="i"
-                      color="dark"
-                      mr={1.25}
-                      sx={{ fontSize: ({ typography: { size } }) => size.sm }}
-                      className="fas fa-code"
-                    />
-                  }
-                  label="Code"
-                />
-              </Tabs>
+              
             </AppBar>
           </Grid>
         </Grid>

@@ -42,7 +42,7 @@ function HeaderOneRCP1() {
               py={0.8125}
               mr={2}
             >
-              garvitchugh
+             Recent Conference Proceedings
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -83,7 +83,7 @@ function HeaderOneRCP1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+      
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -98,7 +98,7 @@ function HeaderOneRCP1() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+     
       </a>
               </MKBox>
             </MKBox>
@@ -156,7 +156,7 @@ function HeaderOneRCP1() {
             `${linearGradient(
               rgba(gradients.dark.main, 0.5),
               rgba(gradients.dark.state, 0.5)
-            )}, url("https://cdn.cseindia.org/gic/24.jpg")`,
+            )}, url("https://iitj.ac.in/techscape/vol04/issue01/images/15%20Years%20of%20IIT%20Jodhpur_01082023.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

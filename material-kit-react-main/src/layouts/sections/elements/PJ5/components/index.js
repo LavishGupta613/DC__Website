@@ -82,7 +82,7 @@ function HeaderOnePJ5() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+        
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -97,7 +97,7 @@ function HeaderOnePJ5() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+   
       </a>
               </MKBox>
             </MKBox>

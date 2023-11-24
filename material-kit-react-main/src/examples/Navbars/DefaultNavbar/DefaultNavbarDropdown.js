@@ -67,7 +67,7 @@ function DefaultNavbarDropdown({
         <MKTypography
           variant="body2"
           lineHeight={1}
-          color="inherit"
+          color="black"
           sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
         >
           {icon}

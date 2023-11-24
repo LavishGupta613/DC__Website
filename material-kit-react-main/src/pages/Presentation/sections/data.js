@@ -21,7 +21,10 @@ Coded by www.creative-tim.com
 
 export default [
   {
-    title: "Recent Conference Proceedings",
+    title: <div style={{ marginBottom: '-45px', margintop:"15px" }}>
+    <h1>Recent Conference Proceedings</h1>
+  </div>
+  ,
     items: [
       {
         image: "https://ubisysresearch.github.io/img/chase2023.png",
@@ -61,7 +64,10 @@ export default [
     ],
   },
   {
-    title: "Recent Journal Publications",
+    
+    title: <div style={{ marginBottom: '-45px', margintop:"10px" }}>
+    <h1>Recent Journal Publications</h1>
+  </div>,
     description: "30+ components that will help go through the pages",
     items: [
       {
@@ -80,8 +86,10 @@ export default [
       },
       {
         image: "https://ubisysresearch.github.io/img/mydatagoeswhere.jpg",
-        name: "WWhere Do All My Smart Home Data Go? Context-aware Data Generation and Forwarding for Edge-based Microservices over Shared IoT Infrastructure",
-        count: "Future Generation Computer Systems",
+       name: <div style={{ textAlign: 'left' }}>
+  Where Do All My Smart Home Data Go? Context-aware Data Generation and Forwarding for Edge-based Microservices over Shared IoT Infrastructure
+</div>,
+ count: "Future Generation Computer Systems",
         des: "",
         route: "/sections/elements/RJP3",
       },
@@ -96,7 +104,10 @@ export default [
     ],
   },
   {
-    title: "Projects",
+    
+    title: <div style={{ marginBottom: '-45px', margintop:"10px" }}>
+    <h1> <section id="Projects1"></section>Projects</h1>
+  </div>,
     description: "30+ components that will help go through the pages",
     items: [
       {
@@ -125,21 +136,21 @@ export default [
         name: "Design of a Cuffless Continuous BP Monitoring Device",
         count: "Role: Co-PI. Cost: 18Lakhs. Sponsoring Agency: Johari Digital Healthcare Ltd. 2021-2022",
         des: "",
-        route: "/sections/elements/PJ6",
+        route: "/sections/elements/PJ4",
       },
       {
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEPir11vQ4JK82r4d0Az2hvBHEsmBHdpA7Mw&usqp=CAU",
         name: "Inventorization of the wildlife towards a sustainable campus",
         count: "Role: PI. Cost: 2Lakhs. Sponsoring Agency: CETSD Campus Sustainability Program, IIT Jodhpur (JCKIC) 2021-2022",
         des: "",
-        route: "/sections/elements/PJ4",
+        route: "/sections/elements/PJ5",
       },
       {
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEPir11vQ4JK82r4d0Az2hvBHEsmBHdpA7Mw&usqp=CAU",
         name: "Demonstration Centre for Smart Graded-Water Supply Grid",
         count: "Role: Co-PI. Cost: 40 Lakhs. Sponsoring Agency: JCKIC",
         des: "",
-        route: "/sections/elements/PJ5",
+        route: "/sections/elements/PJ6",
       },
       
     ],

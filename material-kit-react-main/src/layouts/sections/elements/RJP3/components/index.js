@@ -84,7 +84,7 @@ function HeaderOneRJP3() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+            
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -99,7 +99,7 @@ function HeaderOneRJP3() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+      
       </a>
               </MKBox>
             </MKBox>

@@ -43,7 +43,7 @@ function HeaderOne1() {
               py={0.8125}
               mr={2}
             >
-              garvitchugh
+              
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -84,7 +84,7 @@ function HeaderOne1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+               
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -99,7 +99,7 @@ function HeaderOne1() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+       
       </a>
               </MKBox>
             </MKBox>
@@ -119,7 +119,7 @@ function HeaderOne1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-twitter" />
+                  {/* <MKBox component="i" color="white" className="fab fa-twitter" /> */}
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -130,7 +130,7 @@ function HeaderOne1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-facebook" />
+                  {/* <MKBox component="i" color="white" className="fab fa-facebook" /> */}
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -141,7 +141,7 @@ function HeaderOne1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-instagram" />
+                
                 </MKTypography>
               </MKBox>
             </MKBox>
@@ -182,10 +182,220 @@ function HeaderOne1() {
             Mobile and Pervasive Computing
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
-              <MKButton variant="text" color="white">
+            <MKTypography
+            component="a"
+            href="https://cse.iitj.ac.in/"
+            target="_blank"
+            rel="noreferrer"
+            variant="body2"
+            color="white"
+            fontWeight="regular"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+
+              "& .material-icons-round": {
+                fontSize: "1.125rem",
+                transform: `translateX(3px)`,
+                transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+              },
+
+              "&:hover .material-icons-round, &:focus .material-icons-round": {
+                transform: `translateX(6px)`,
+              },
+            }}
+          ><p style={{ cursor: 'pointer' }}>
+ <span 
+    style={{ 
+      color: 'white',
+      textDecoration: 'none',
+    }}
+    onMouseOver={(e) => e.target.style.textDecoration = 'underline white'} // Set underline color to blue on mouse over
+    onMouseOut={(e) => e.target.style.textDecoration = 'none'} // Remove underline on mouse out
+  >
+      Indian Institute of Technology, Jodhpur
+  </span><br />
+  <a
+  href="https://www.linkedin.com/in/suchetana/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    marginLeft: '10px',
+    textDecoration: 'none', 
+    transition: 'transform 0.2s',
+    display: 'inline-block', 
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.transform = 'scale(1.2)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'; 
+  }}
+>
+  <i
+    className="fab fa-linkedin"
+    style={{
+      color: 'white',
+      fontSize: '33px',
+      verticalAlign: 'middle', 
+      display: 'inline-block', 
+    }}
+  ></i>
+</a>
+<a
+  href="https://scholar.google.co.in/citations?hl=en&user=sLnKodYAAAAJ"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    marginLeft: '10px',
+    textDecoration: 'none', 
+    transition: 'transform 0.2s',
+    display: 'inline-block', 
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.transform = 'scale(1.2)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'; 
+  }}
+>
+  <i
+    className="fa fa-graduation-cap"
+    style={{
+      color: 'white',
+      fontSize: '33px',
+      verticalAlign: 'middle', 
+      display: 'inline-block', 
+    }}
+  ></i>
+</a>
+<a
+  href="https://www.researchgate.net/profile/Suchetana-Chakraborty"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    marginLeft: '10px',
+    textDecoration: 'none', 
+    transition: 'transform 0.2s',
+    display: 'inline-block', 
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.transform = 'scale(1.2)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'; 
+  }}
+>
+  <i
+    className="fab fa-researchgate"
+    style={{
+      color: 'white',
+      fontSize: '33px',
+      verticalAlign: 'middle', 
+      display: 'inline-block', 
+    }}
+  ></i>
+</a>
+<a
+  href="https://sites.google.com/site/suchetana0116/contact"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    marginLeft: '10px',
+    textDecoration: 'none', 
+    transition: 'transform 0.2s',
+    display: 'inline-block', 
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.transform = 'scale(1.2)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'; 
+  }}
+>
+  <i
+    className="fas fa-address-book"
+    style={{
+      color: 'white',
+      fontSize: '33px',
+      verticalAlign: 'middle', 
+      display: 'inline-block', 
+    }}
+  ></i>
+</a>
+<a
+  href="https://orcid.org/0000-0001-9856-0687"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    marginLeft: '10px',
+    textDecoration: 'none', 
+    transition: 'transform 0.2s',
+    display: 'inline-block', 
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.transform = 'scale(1.2)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'; 
+  }}
+>
+  <i
+    className="fas fa-id-badge"
+    style={{
+      color: 'white',
+      fontSize: '33px',
+      verticalAlign: 'middle', 
+      display: 'inline-block', 
+    }}
+  ></i>
+</a>
+<a
+  href="https://dblp.org/pid/52/10123.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    marginLeft: '10px',
+    textDecoration: 'none', 
+    transition: 'transform 0.2s',
+    display: 'inline-block', 
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.transform = 'scale(1.2)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.transform = 'scale(1)'; 
+  }}
+>
+  <i
+    className="fas fa-database"
+    style={{
+      color: 'white',
+      fontSize: '33px',
+      verticalAlign: 'middle', 
+      display: 'inline-block', 
+    }}
+  ></i>
+</a>
+
+
+</p>   
+           </MKTypography>
+          
+
+
+
+       
+              
+              {/* <MKButton variant="text" color="white">
                 Read more
-              </MKButton>
+              </MKButton> */}
+             
+          
+
+
+
+       
             </Stack>
           </Grid>
           

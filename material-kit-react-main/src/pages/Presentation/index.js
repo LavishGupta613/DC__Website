@@ -1,76 +1,30 @@
-/*
-=========================================================
-* Material KReact - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-
-// Material KReact components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
-
-// Material K React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-// import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import App from "./App";
-// Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
-// Presentation page components
-// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
-//App
-
-// Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
-
-// Images
-// import bgImage from "assets/images/bg-presentation.jpg";
-
 function Presentation() {
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "fre download",
-          color: "info",
-        }}
+        
         sticky
         
-      /><App ></App>
-      {/* <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${""})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >  */}
+      />
+      <App ></App>
+      
         <Container
         >
           <Grid container item xs={12} lg={7} justifyContent="center" position="absolute" 
@@ -88,7 +42,7 @@ function Presentation() {
               })}
               
             >
-             <div style={{ color: "white" }}>Welcome to UbiSys Research Lab!</div>
+             <div style={{ color: "white" }}>Welcome to UbiSys Research Lab</div>
 
 
             </MKTypography>
@@ -118,39 +72,13 @@ function Presentation() {
         <Counters />
         <Information />
         <DesignBlocks />
-        <Pages />
-        {/* <Container sx={{ mt: 6 }}>
-          {/* <BuiltByDevelopers /> 
-        </Container> */}
-     
-        
-            
-            {/* <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
-                }}
-              />
-            </Grid> */}
-       
-        <Testimonials />
+        <Pages /><Testimonials />
         <Download />
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Thank you for your support!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
-                  We deliver the best web products
-                </MKTypography>
+              
               </Grid>
               <Grid
                 item
@@ -160,7 +88,7 @@ function Presentation() {
                 mr={{ xs: 0, lg: "auto" }}
                 sx={{ textAlign: { xs: "center", lg: "right" } }}
               >
-                <MKSocialButton
+                {/* <MKSocialButton
                   component="a"
                   href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                   target="_blank"
@@ -169,8 +97,8 @@ function Presentation() {
                 >
                   <i className="fab fa-twitter" />
                   &nbsp;Tweet
-                </MKSocialButton>
-                <MKSocialButton
+                </MKSocialButton> */}
+                {/* <MKSocialButton
                   component="a"
                   href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit-react"
                   target="_blank"
@@ -179,8 +107,8 @@ function Presentation() {
                 >
                   <i className="fab fa-facebook" />
                   &nbsp;Share
-                </MKSocialButton>
-                <MKSocialButton
+                </MKSocialButton> */}
+                {/* <MKSocialButton
                   component="a"
                   href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
                   target="_blank"
@@ -188,7 +116,7 @@ function Presentation() {
                 >
                   <i className="fab fa-pinterest" />
                   &nbsp;Pin it
-                </MKSocialButton>
+                </MKSocialButton> */}
               </Grid>
             </Grid>
           </Container>

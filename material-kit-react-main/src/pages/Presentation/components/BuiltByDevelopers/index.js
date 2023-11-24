@@ -38,24 +38,36 @@ function BuiltByDevelopers() {
   //   textDecoration: 'none',
   // };
   return (
+    <div style={{ marginTop: "200px" ,backgroundColor: '#F8F8F8'  ,marginLeft :"-85px", marginRight :"-85px" , marginBottom :"100px"}} >
+     
     <MKBox
       display="flex"
       alignItems="center"
       borderRadius="xl"
       my={1}
       py={6}
-      
+      style={{ backgroundColor: '#F8F8F8' }}
     >
-      <Container>
+    
+    
+      <Container sx={{ marginTop: "20px" , marginBottom :"40px" }}>
+         {/* <Grid container spacing={-2} sx={{mt :{xs:0,md:6}}} > */}
+
+         <MKTypography variant="h2">
+         <section id="MeetTeam">Meet the Team</section></MKTypography>
+         <div style={{marginBottom :"50px"}}></div>
         <Grid container item xs={12} lg={11} sx={{ ml: { xs: 1, lg: 6 } , marginTop: '1px' }}>
+        
         <Grid item xs={12} lg={4.5}>
-        <MKTypography variant="p" color="grey" style={{ marginLeft: '10px' , fontFamily : 'Roboto, sans-serif' }}>
+        
+        <MKTypography variant="p" color="grey" style={{ marginLeft: '-10px' , fontFamily : 'Roboto, sans-serif' }}>
         
             <img
                 src={img}
                 style={{
-                    borderRadius: '50%', 
-                    width: '270px',     
+                    borderRadius: '5%', 
+                    marginLeft:"15px",
+                    width: '240px',     
                     height: '300px',   
                 }}
                 alt="Profile"
@@ -318,7 +330,7 @@ function BuiltByDevelopers() {
   >
     PI
   </span>
-      <DefaultCounterCard description=<div style={{fontSize : '18px' , textAlign: 'left' }}>
+      <DefaultCounterCard description=<div style={{fontSize : '18px' , textAlign: 'justify' }}>
      I am an Assistant Professor in the Department of <a href="https://cse.iitj.ac.in/"  style={{ color: 'blue' }}>Computer Science and Engineering</a>,<a href="https://www.iitj.ac.in/" style={{color : 'blue'}}> Indian Institute of Technology, Jodhpur </a>Since December 2020. My research interests are broadly in the domains of Ubiquitous Computing, IoT and Edge Computing, Wireless sensor and mobile ad hoc networks, Distributed Systems and Smart city applications. To know more about the work, please explore <a href="https://sites.google.com/site/suchetana0116/research" style={{color: 'blue'}}>this page</a>. I am one of the founding members of UbiSys Research Group, in the department and actively involved in interdisciplinary research through <a href="https://iitj.ac.in/shc/" style={{color : 'blue'}}>IDRP - Smart Healthcare</a>, <a href="https://iitj.ac.in/iot/" style={{color:'blue'}}>IDRP - IoT & Applications</a> and<a href="https://iitj.ac.in/CETSD/" style={{color : 'blue'}}> Centre of Emerging Technologies for Sustainable Development (CETSD)</a>. Currently, I am working as an Area Editor of Ad Hoc Networks journal, Elsevier. Also I am involved in organizing many conferences including IEEE ANTS 2021 (as Tutorial Co-chair), IEEE LCN 2021, 2022, 2023 (as TPC member), COMSNETS 2022, 2023 (as TPC member), ICDCN 2023 (as Workshop Co-chair) to name a few. </div>
       >    </DefaultCounterCard>  </MKTypography></Grid>
         </Grid>
@@ -382,7 +394,10 @@ BTech in Computer Science and Engineering, 2009</h4>
               />
             </Grid> */}
           </Grid>      </Container>
+        
     </MKBox>
+    
+    </div>
   );
 }
 

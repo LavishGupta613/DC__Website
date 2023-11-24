@@ -51,13 +51,13 @@ function PageHeaders8() {
   return (
     
     <BaseLayout
-      title="Page Headers"
+      title="Monik Raj Behera"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/page-sections/page-headers" },
-        { label: "Page Headers" },
+        {  route: "/sections/page-sections/page-headers" },
+        {  },
       ]}
     >
-      <View title="Header 1" code={headerOneCode} height="40rem">
+      <View title="" code={headerOneCode} height="40rem">
         <HeaderOne8 />
       </View>
       <TeacherAssistantDetails accomplishments={accomplishmentsData} education={educationData} publications={publications} />

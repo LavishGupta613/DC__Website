@@ -51,13 +51,13 @@ function PageHeaders7() {
   return (
     
     <BaseLayout
-      title="Page Headers"
+      title="Kamal Kumar Gola"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/page-sections/page-headers" },
-        { label: "Page Headers" },
+        { label: "", route: "/sections/page-sections/page-headers" },
+        { label: "" },
       ]}
     >
-      <View title="Header 1" code={headerOneCode} height="40rem">
+      <View title="" code={headerOneCode} height="40rem">
         <HeaderOne7 />
       </View>
       <TeacherAssistantDetails accomplishments={accomplishmentsData} education={educationData} publications={publications} />

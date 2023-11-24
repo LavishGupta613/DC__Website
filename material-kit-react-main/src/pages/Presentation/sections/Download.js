@@ -1,71 +1,22 @@
 
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-// import Tooltip from "@mui/material/Tooltip";
-import MailOutlineIcon from "@mui/icons-material/MailOutline"; // Import the email icon
+import MailOutlineIcon from "@mui/icons-material/MailOutline"; 
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
-// Images
-import bgImage from "assets/images/shapes/waves-white.svg";
-// import { Margin } from "@mui/icons-material";
 
 function Download() {
   return (
-    <MKBox component="section" py={{ xs: 0, sm: 12 }}>
-      <MKBox
-        variant="gradient"
-        bgColor="dark"
-        position="relative"
-        borderRadius="xl"
-        sx={{ overflow: "hidden" }}
-      >
-        <MKBox
-          component="img"
-          src={bgImage}
-          alt="pattern-lines"
-          position="absolute"
-          top={0}
-          left={0}
-          width="100%"
-          zIndex={1}
-          opacity={0.2}
-        />
-        <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
-          <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="left">
-            <MKTypography variant="h3" color="white">
-              Do you love this awesome
-            </MKTypography>
-            <MKTypography variant="h3" color="white" mb={1}>
-              UI Kit for ReactJS &amp; MUI?
-            </MKTypography>
-            <MKTypography variant="body2" color="white" mb={6}>
-              Cause if you do, it can be yours for FREE. Hit the button below to navigate to
-              Creative Tim where you can find the Design System in HTML. Start a new project or give
-              an old Bootstrap project a new look!
-            </MKTypography>
-            <MKButton
-              variant="gradient"
-              color="info"
-              size="large"
-              component="a"
-              href="https://www.creative-tim.com/product/material-kit-react"
-              sx={{ mb: 2 }}
-            >
-              Download Now
-            </MKButton>
-          </Grid>
-        </Container>
-      </MKBox>
+    <MKBox component="section" py={{ xs: 0, sm: 1 }} style={{marginTop:"20px"}}>
       <Container>
         <Grid container item xs={12} justifyContent="center">
           <Grid container item xs={12} lg={4} justifyContent="flex-start">
             <MKBox textAlign="left">
-            <MKTypography variant="h3" mt={6} mb={3}>
-                Photos
+            <MKTypography variant="h2" mt={6} mb={3} >
+
+            <section id="Photos1"></section>    Photos
               </MKTypography>
               <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-05-12-15-44-02.jpg" width="350px" height="250px" />
             </MKBox>
@@ -79,7 +30,7 @@ function Download() {
           <Grid container item xs={12} lg={4} justifyContent="flex-start">
   <MKBox textAlign="left">
    
-    <MKTypography variant="body1" mt={4}>
+    <MKTypography variant="body1" mt={7}>
                 <MailOutlineIcon />{" "}
                 <a href="mailto:suchetana@iitj.ac.in">suchetana@iitj.ac.in</a>
               </MKTypography>

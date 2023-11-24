@@ -57,10 +57,10 @@ function DefaultInfoCard({ color, icon, title, description, direction, small,des
         pr={direction === "left" ? 6 : 0}
         pl={direction === "right" ? 6 : 0}
       ><ul>
-       <li>{description}</li>
-       <li>{des2}</li>
-       <li>{des3}</li>
-       <li>{des4}</li> 
+        <li style={{ fontSize: '18px' , textAlign: 'justify' }}>{description}</li>
+          <li style={{ fontSize: '18px',textAlign: 'justify'  }}>{des2}</li>
+          <li style={{ fontSize: '18px',textAlign: 'justify'  }}>{des3}</li>
+          <li style={{ fontSize: '18px' ,textAlign: 'justify' }}>{des4}</li>
       </ul>
       </MKTypography>
     </MKBox>

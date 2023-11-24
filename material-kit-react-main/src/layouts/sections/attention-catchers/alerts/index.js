@@ -32,7 +32,7 @@ function Alerts() {
         { label: "Alerts" },
       ]}
     >
-      <View title="Simple alerts" code={simpleAlertsCode}>
+      <View title="Simple aler" code={simpleAlertsCode}>
         <SimpleAlerts />
       </View>
     </BaseLayout>

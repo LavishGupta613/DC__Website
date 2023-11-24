@@ -8841,7 +8841,7 @@ google.maps.__gjsload__('util', function(_) {
     _.sF = class {
         constructor(a = 0, b = 0, c = 0, d = 1) {
             this.red = a;
-            this.green = b;
+            this.blue = b;
             this.blue = c;
             this.alpha = d
         }

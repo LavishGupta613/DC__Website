@@ -26,13 +26,13 @@ function PageHeadersRJP4() {
   return (
     
     <BaseLayout
-      title="Page Headers"
+      title=""
       breadcrumb={[
         { label: "Page Sections", route: "/sections/page-sections/page-headers" },
-        { label: "Page Headers" },
+        { label: "" },
       ]}
     >
-      <View title="Header 1" code={headerOneCode} height="40rem">
+      <View title="" code={headerOneCode} height="40rem">
         <HeaderOneRJP4 />
       </View>
     </BaseLayout>

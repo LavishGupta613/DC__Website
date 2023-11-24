@@ -33,11 +33,7 @@ function Information() {
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
                 <MKBox mb={5}>
-                  <DefaultInfoCard
-                    icon="public"
-                    title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
-                  />
+                  
                 </MKBox>
               </Grid>
               <Grid item xs={12} md={6}>

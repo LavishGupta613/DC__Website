@@ -28,11 +28,11 @@ function Alerts1() {
     <BaseLayout
       title="Student Accomplishments"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/attention-catchers/SA" },
-        { label: "Alerts" },
+        { label: "", route: "/sections/attention-catchers/SA" },
+        { label: "" },
       ]}
     >
-      <View title="Simple alert" code={simpleAlertsCode}>
+      <View title="" code={simpleAlertsCode}>
         <SimpleAlerts1 />
       </View>
     </BaseLayout>

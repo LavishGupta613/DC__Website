@@ -42,7 +42,7 @@ function HeaderOne1() {
               py={0.8125}
               mr={2}
             >
-              garvitchugh
+             Recent Conference Proceedings
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -83,7 +83,7 @@ function HeaderOne1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+                 
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -98,7 +98,7 @@ function HeaderOne1() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+       
       </a>
               </MKBox>
             </MKBox>

@@ -26,7 +26,7 @@ import MKTypography from "components/MKTypography";
 function DefaultCounterCard({ color, title, description, head }) {
   return (
     <MKBox p={2} textAlign="center" lineHeight={1}>
-      <MKTypography variant="h1" color={color} textGradient>
+      <MKTypography variant="h1" color={color} sx={{ textAlign: "left" }}>
         {head}
       </MKTypography>
       {title && (
@@ -35,8 +35,9 @@ function DefaultCounterCard({ color, title, description, head }) {
         </MKTypography>
       )}
       {description && (
-        <MKTypography variant="body2" color="text">
-          {description}
+        <MKTypography variant="body2" color="text" sx={{ fontSize: "18px", textAlign: "justify" }}>
+          {/* Updated textAlign property to "justify" */}
+          <div style={{ textAlign: "justify" }}>{description}</div>
         </MKTypography>
       )}
     </MKBox>

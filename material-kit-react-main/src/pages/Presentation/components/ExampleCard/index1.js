@@ -12,10 +12,10 @@ function ExampleCard1({ image, name, count, pro, des }) {
         display="flex"
         alignItems="left"
         bgColor="white"
-        borderRadius="10px"
+        borderRadius="111px"
         shadow="l1g"
         width="80rem" 
-        minHeight="12rem"
+        minHeight="8rem"
         sx={{
           overflow: "hidden",
           textAlign: "center",
@@ -46,8 +46,8 @@ function ExampleCard1({ image, name, count, pro, des }) {
             src={image}
             alt={name}
             style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
+              maxWidth: "90%",
+              maxHeight: "70%",
             }}
           />
         </MKBox>

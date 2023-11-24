@@ -162,7 +162,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                           transition: "all 300ms linear",
 
                           "&:hover": {
-                            backgroundColor: grey[200],
+                            backgroundColor: grey[0],
                             color: dark.main,
                           },
                         })}
@@ -230,7 +230,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                 color: dark.main,
 
                 "& *": {
-                  color: dark.main,
+                  color: "blue",
                 },
               },
             })}
@@ -459,7 +459,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         width={relative ? "100%" : "calc(100% - 48px)"}
         borderRadius="xl"
         shadow={transparent ? "none" : "md"}
-        color={light ? "white" : "dark"}
+        color="dark"
         position={relative ? "relative" : "absolute"}
         left={0}
         zIndex={3}
@@ -551,7 +551,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "UbiSys",
+  brand: <h3>UbiSys</h3>,
   transparent: false,
   light: false,
   action: false,

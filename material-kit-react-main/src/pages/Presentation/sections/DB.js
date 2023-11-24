@@ -22,25 +22,33 @@ function DesignBlocks1() {
       <Grid item xs={2} lg={12}>
         <Grid container spacing={-10}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={4} md={7} sx={{ mb: -7 }} key={name}>
+            <Grid item xs={4} md={7} sx={{ mb: -5 }} key={name}>
               <Link to={route}>
                 <ExampleCard1 image={image} name={name} count={count} des={des} pro={pro} />
               </Link>
             </Grid>
           ))}
         </Grid>
-        <a href="http://127.0.0.1:3001/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html" style={{ textDecoration: 'underline' }}>
+        <a href="http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html"  style={{ float: 'right' ,textDecoration: 'underline' }}>
           See All Publications
-         
-        </a>
+          </a>
       </Grid>
-      <div style={{ textAlign: 'center' }}>
-        
-        <a href="http://127.0.0.1:3001/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html" style={{ textDecoration: 'underline' }}>
-          See All Publications
-         
-        </a>
-      </div>
+      
+      
+  
+  <div style={{ textAlign: 'right', marginBottom: '60px' }}>
+  <a
+    href="http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/index.html"
+    style={{ textDecoration: 'underline', marginLeft: "1100px" }}
+  >
+    See All Publication
+  </a>
+</div>
+
+
+
+
+
     </Grid>
   ));
 
@@ -59,8 +67,9 @@ function DesignBlocks1() {
           <MKBadge variant="contained" color="info" container sx={{ mb: 2 }} />
         </Grid>
       </Container>
-      
+     
       <Container sx={{ mt: 3 }}>{renderData}</Container>
+      
     </MKBox>
   );
 }

@@ -42,7 +42,7 @@ function HeaderOne9() {
               py={0.8125}
               mr={2}
             >
-              Priyal Jain
+              {/* Priyal Jain */}
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -83,7 +83,7 @@ function HeaderOne9() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+              
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -98,7 +98,7 @@ function HeaderOne9() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://www.linkedin.com/in/priyal-jain-9940b5171/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+     
       </a>
               </MKBox>
             </MKBox>

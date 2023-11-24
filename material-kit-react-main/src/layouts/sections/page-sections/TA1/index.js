@@ -3,7 +3,7 @@ import React from 'react';
 import BaseLayout from 'layouts/sections/components/BaseLayout';
 import View from 'layouts/sections/components/View';
 import HeaderOne1 from './components';
-import headerOneCode from '../page-headers/components/HeaderOne/code';
+// import headerOneCode from '../page-headers/components/HeaderOne/code';
 import TeacherAssistantDetails from '../TADetails';
 
 function PageHeaders1() {
@@ -35,13 +35,13 @@ function PageHeaders1() {
 
   return (
     <BaseLayout
-      title="Page Headers"
+      title="Garvit Chugh"
       breadcrumb={[
-        { label: 'Page Sections', route: '/sections/page-sections/page-headers' },
-        { label: 'Page Headers' },
+        { label: '', route: '/sections/page-sections/page-headers' },
+        { label: '' },
       ]}
     >
-      <View title="Header 1" code={headerOneCode} height="40rem">
+      <View title=""  height="40rem">
         <HeaderOne1 />
       </View>
 

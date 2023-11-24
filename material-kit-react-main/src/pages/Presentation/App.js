@@ -1,9 +1,10 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-
+import img1 from "./iitjcampus1.jpg";
 const sliderImages = [
   {
-    url: "https://iitj.ac.in/plasma2022/images/iitjcampus.jpg",
+    // url: "https://iitj.ac.in/plasma2022/images/iitjcampus.jpg",
+    url : img1,
   },
   {
     url: "https://iitj.ac.in/techscape/vol04/issue01/sliderimg/19_28072023.jpg",

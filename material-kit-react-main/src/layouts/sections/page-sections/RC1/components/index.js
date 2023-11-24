@@ -42,7 +42,7 @@ function HeaderOneR1() {
               py={0.8125}
               mr={2}
             >
-              garvitchugh
+             Recent Conference Proceedings
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -83,7 +83,7 @@ function HeaderOneR1() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  About Us
+              
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -98,7 +98,7 @@ function HeaderOneR1() {
                 > 
                 </MKTypography>
                 <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
-        Contact Us
+     
       </a>
               </MKBox>
             </MKBox>
@@ -173,7 +173,7 @@ function HeaderOneR1() {
                 },
               })}
             >
-              Garvit Chugh
+             Recent Conference Proceedings
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
             Exploring Earables to Monitor Temporal Lack of Focus during Online Meetings to Identify Onset of Neurological Disorders

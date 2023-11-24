@@ -23,9 +23,9 @@ import MKAlert from "components/MKAlert";
 
 
 const styles = {
-  background: `url("https://iitj.ac.in/techscape/vol04/issue01/sliderimg/19_28072023.jpg")`,
+  background: `url("https://iitj.ac.in/techscape/vol04/issue01/sliderimg/19_2807223.jpg")`,
   backgroundSize: 'cover',
-  backgroundAttachment: 'fixed',
+  // backgroundAttachment: 'fixed',
   color: 'white', // Text color
  
   filter: 'brightness(0.7)',
@@ -44,13 +44,13 @@ function SimpleAlerts1() {
                       <a href="https://chase23.sigbed.org/Home.html" style={{ color: 'dodgerblue' }}>IEEE/ACM CHASE 2023! </a></MKAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="dark">Ananya was selected and attended the SERB-sponsored high-end workshop on AI and Data Science for Industrial Applications at CSIR-CMERI.</MKAlert>
+            <MKAlert color="light">Ananya was selected and attended the SERB-sponsored high-end workshop on AI and Data Science for Industrial Applications at CSIR-CMERI.</MKAlert>
           </Grid>
           <Grid item xs={12}>
             <MKAlert color="light">Garvit received a Travel Grant from COMSNETS! to attend the 15th International Conference on COMmunication Systems & NETworkS from 3rd to 9th January 2023.</MKAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="dark">[Publication] Garvit presented one Poster and one Demo at <a href="https://www.comsnets.org/" style={{ color: 'dodgerblue' }}>COMSNETS!</a> 
+            <MKAlert color="light">[Publication] Garvit presented one Poster and one Demo at <a href="https://www.comsnets.org/" style={{ color: 'dodgerblue' }}>COMSNETS!</a> 
 
 </MKAlert>
           </Grid>
@@ -59,17 +59,17 @@ function SimpleAlerts1() {
 </MKAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="dark">The very first version of PoC for bat tracker and smartwatch have been developed.</MKAlert>
+            <MKAlert color="light">The very first version of PoC for bat tracker and smartwatch have been developed.</MKAlert>
           </Grid>
           <Grid item xs={12}>
             <MKAlert color="light">CRG grant from SERB got approved</MKAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="dark"><a href="https://chughgarvit.github.io/" style={{ color: 'dodgerblue' }}>Garvit</a> received outstanding TA Award.</MKAlert>
+            <MKAlert color="light"><a href="https://chughgarvit.github.io/" style={{ color: 'dodgerblue' }}>Garvit</a> received outstanding TA Award.</MKAlert>
             <MKAlert color="light">[APP] Prakriti App v2.1 to be released soon</MKAlert>
-            <MKAlert color="dark">3-D printed smart home and ambient sensing lab to come up soon!</MKAlert>
+            <MKAlert color="light">3-D printed smart home and ambient sensing lab to come up soon!</MKAlert>
             <MKAlert color="light"><a href="https://chughgarvit.github.io/" style={{ color: 'dodgerblue' }}>Garvit   </a>   received a Grant to attend EarComp 2022 by Nokia Bell Labs.</MKAlert>
-            <MKAlert color="dark">[Publication] <a href="https://chughgarvit.github.io/" style={{ color: 'dodgerblue' }}>Garvit</a> received a paper acceptance in EarComp 2022.</MKAlert>
+            <MKAlert color="light">[Publication] <a href="https://chughgarvit.github.io/" style={{ color: 'dodgerblue' }}>Garvit</a> received a paper acceptance in EarComp 2022.</MKAlert>
             <MKAlert color="light"><a href="https://chughgarvit.github.io/" style={{ color: 'dodgerblue' }}>Garvit</a> secured 2nd position at the<a href="https://iitjsc.acm.org/pages/activities/ideathon.html" style={{ color: 'dodgerblue' }}>iS3: iDeathon on Sustainable Smart Systems</a>  organised by ACM Student Chapter IIT Jodhpur.</MKAlert>
           </Grid>
         </Grid>

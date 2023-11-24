@@ -22,11 +22,14 @@ import kamal from "./TA/kamalgola.jpeg";
 import mohik from "./TA/monikraj.jpeg";
 import priyal from "./TA/priyal.jpeg";
 import saha from "./TA/nayanita.jpeg";
+import MKTypography from "components/MKTypography";
 // import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
 
 export default [
   {
-    title: "Meet the Team",
+    title: <MKTypography variant="h2" fontWeight="bold" sx={{ marginTop: '-100px' , marginBottom:"-100px" }}>
+   <section id="Current"></section>Current Students
+  </MKTypography>,
     items: [
       {
         image: garvit,
@@ -90,7 +93,7 @@ export default [
     ],
   },
   {
-    title: "Lab Alumni",
+    title: <div style={{ marginBottom:"-500px"}}><section id="Alumni"></section>Lab Alumni</div>,
     description: "30+ components that will help go through the pages",
     items: [
       {
