@@ -113,7 +113,7 @@ export default [
       {
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEPir11vQ4JK82r4d0Az2hvBHEsmBHdpA7Mw&usqp=CAU",
         name: "ConSenseHAR",
-        count: "Decentralized collaborative context sensing towards pervasive Human Activity Recognition",
+        count: "Decentralizd collaborative context sensing towards pervasive Human Activity Recognition",
         des :"",
         route: "/sections/elements/PJ1",
       },

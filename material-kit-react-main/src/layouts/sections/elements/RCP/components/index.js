@@ -183,10 +183,10 @@ function HeaderOneRCP1() {
             Garvit Chugh, Suchetana Chakraborty and Sandip Chakraborty
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
+              {/* <MKButton color="white">Get Started</MKButton>
               <MKButton variant="text" color="white">
                 Read more
-              </MKButton>
+              </MKButton> */}
             </Stack>
           </Grid>
         </Container>

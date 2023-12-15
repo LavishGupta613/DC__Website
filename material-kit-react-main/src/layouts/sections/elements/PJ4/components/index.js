@@ -182,10 +182,10 @@ function HeaderOnePJ4() {
             <br></br>
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
+              {/* <MKButton color="white">Get Started</MKButton>
               <MKButton variant="text" color="white">
                 Read more
-              </MKButton>
+              </MKButton> */}
             </Stack>
           </Grid>
         </Container>

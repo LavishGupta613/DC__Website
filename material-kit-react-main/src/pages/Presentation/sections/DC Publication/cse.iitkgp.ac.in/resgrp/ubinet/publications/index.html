@@ -1,15 +1,4 @@
-<!--
-=========================================================
-* Material Kit 2 - v3.0.2
-=========================================================
 
-* Product Page:  https://www.creative-tim.com/product/material-kit 
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
@@ -22,6 +11,142 @@
         UbiSys@CSE,IITKGP
     </title>
     <style>
+        .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style for the dropdown button */
+    .dropdown-btn {
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    /* Style for dropdown content items */
+    .dropdown-item {
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Style for horizontal layout */
+    .dropdown-content.horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Adjust item styles for horizontal layout */
+    .dropdown-content.horizontal .dropdown-item {
+      padding: 12px;
+    }
+      .dropbtn {
+  background-color: #0096FF;
+  color: white;
+  width: 132px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #0096FF;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 23px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+         #search-panel {
+      position: relative;
+      display: inline-block;
+    }
+
+    #options-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 300px;
+      z-index: 1;
+    }
+
+    #options-list li {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #options-list li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .result {
+      display: none;
+    }
+
+    .result.active {
+      display: block;
+    }
+.show {display: block;}
+
+.show {display: block;}
         /* Add styles for the buttons */
         .filtering-button a.btn {
            
@@ -203,21 +328,13 @@
     <!-- End Navbar -->
     <!-- -------- START HEADER 7 w/ text and video ------- -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-50" style="background-image: url('https://iitj.ac.in/plasma2022/images/iitjcampus.jpg');">
+        <div class="page-header min-vh-50" style="background-image: url('https://iitj.ac.in/dhs/assets/img/slide/3_slider.jpg');">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
                         <h1 class="text-white">UbiSys Research Group</h1>
-                        <!-- <p class="lead mb-4 text-white opacity-8">We’re constantly trying to push the boundaries of sensing and systems research. Come along if you share the same ambition.</p>
-            <button class="btn bg-white text-dark">Research Highlights</button>
-            <h6 class="text-white mb-2 mt-5">Follow us on</h6>
-            <div class="d-flex justify-content-center">
-              <a href="#"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
-              <a href="#"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
-              <a href="#"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
-              <a href="#"><i class="fab fa-google-plus text-lg text-white"></i></a>
-            </div> -->
+                       
                     </div>
                 </div>
             </div>
@@ -235,6 +352,10 @@
                                 <div class="portfolio">
                                     <div class="row">
                                         <div class="col-sm-12">
+                                            <div id="search-panel">
+                                                <!-- <input type="text" id="search-input" placeholder="Type to search..."> -->
+                                                <ul id="options-list"></ul>
+                                              </div>
                                             <div class="filtering-button">
                                                 <a class="btn btn-primary" data-filter="*"> All Publications</a>
                                                 <a class="btn btn-secondary" data-filter=".cat1">Journal</a>
@@ -246,8 +367,26 @@
                                                 <a class="btn btn-secondary" data-filter=".cat7">Distributed Systems</a>
                                                 <a class="btn btn-secondary" data-filter=".cat8">Sensing</a>
                                             </div>
-                                        </div>
-                                    </div>
+                                           
+                                            <div class="filtering-button">
+                                            <div class="dropdown">
+                                              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                              <div id="myDropdown" class="dropdown-content">
+                                                <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
+                                                <a class="btn btn-primary" data-filter="*">All Publications</a>
+                                                <a class="btn btn-secondary"  data-filter=".cat1">Jounral</a>
+                                                <a class="btn btn-secondary" data-filter=".cat2">Conference (Full)</a>
+                                                <a class="btn btn-secondary" data-filter=".cat3">Conference (Poster)</a>
+                                                <a class="btn btn-secondary" data-filter=".cat4">Workshop</a>
+                                                <a class="btn btn-secondary" data-filter=".cat5">Network</a>
+                                                <a class="btn btn-secondary" data-filter=".cat6">HCI</a>
+                                                <a class="btn btn-secondary" data-filter=".cat7">Distributed Systems</a>
+                                                <a class="btn btn-secondary" data-filter=".cat8">Sensing</a>
+                                                
+                                              </div>
+                                                                                  </div>
+                                          </div>
+                                          
                                     <div class="service-area section">
                                         <div class="container">
                                             <div class="grid pub-list">
@@ -820,6 +959,29 @@
 
     <script>
         // get the element to animate
+        function myFunction() {
+            var dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+<script>
         var element = document.getElementById('count-stats');
         var elementHeight = element.clientHeight;
 

@@ -26,7 +26,7 @@ import simpleAlertsCode from "layouts/sections/attention-catchers/alerts/compone
 function Alerts09() {
   return (
     <BaseLayout
-      title="Interns"
+      title="Lab Alumni"
       breadcrumb={[
         { label: "", route: "/sections/attention-catchers/Interns" },
         { label: "" },
