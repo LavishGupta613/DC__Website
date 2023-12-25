@@ -19,12 +19,14 @@ const App = () => {
     <div className="slider-wrapper">
       <div className="slider-overlay"></div>
       <SimpleImageSlider
-        width={1518}
-        height={550}
+        width={'100%'}  
+        height={'65vh'}
         images={sliderImages}
         showNavs={true}
-      />
+      ></SimpleImageSlider>
+       
     </div>
+    
   );
 };
 

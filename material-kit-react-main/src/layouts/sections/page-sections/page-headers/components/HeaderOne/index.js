@@ -23,11 +23,11 @@ import Stack from "@mui/material/Stack";
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-
+import PropTypes from 'prop-types';
 // Images
-import bgImage from "assets/images/bg-coworking.jpeg";
+// import bgImage from "assets/images/bg-coworking.jpeg";
 
-function HeaderOne() {
+function HeaderOne({title , description}) {
   return (
     <MKBox component="header" position="relative" height="100%">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
@@ -42,7 +42,7 @@ function HeaderOne() {
               py={0.8125}
               mr={2}
             >
-              Material Design
+            
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -97,6 +97,9 @@ function HeaderOne() {
                 >
               
                 </MKTypography>
+                <a style={{color : "white"}}href="https://chughgarvit.github.io/" target="_blank" rel="noopener noreferrer">
+       
+      </a>
               </MKBox>
             </MKBox>
             <MKBox
@@ -152,13 +155,13 @@ function HeaderOne() {
             `${linearGradient(
               rgba(gradients.dark.main, 0.5),
               rgba(gradients.dark.state, 0.5)
-            )}, url(${bgImage})`,
+            )}, url(${"https://iitj.ac.in/techscape/vol04/issue01/images/15%20Years%20of%20IIT%20Jodhpur_01082023.jpg"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <Container>
-          <Grid container item xs={12} md={7} lg={6} flexDirection="column" justifyContent="center">
+          <Grid container item xs={12} md={7} lg={12} flexDirection="column" justifyContent="center">
             <MKTypography
               variant="h1"
               color="white"
@@ -169,17 +172,16 @@ function HeaderOne() {
                 },
               })}
             >
-              Material Kit
+              {title}
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
-              The time is now for it be okay to be great. People in this world shun people for being
-              nice.
+              {description}
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
-              <MKButton variant="text" color="white">
-                Read more
-              </MKButton>
+              {/* <MKButton color="white">Get Started</MKButton> */}
+              {/* <MKButton variant="text" color="white">
+                
+              </MKButton> */}
             </Stack>
           </Grid>
         </Container>
@@ -187,5 +189,9 @@ function HeaderOne() {
     </MKBox>
   );
 }
+HeaderOne.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default HeaderOne;

@@ -19,16 +19,18 @@ import { useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 // @mui material components
+
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-
+import UserDetails from "pages/Presentation/sections/tempalte/UserDetails";
+import { Users } from "pages/Presentation/sections/tempalte/Users";
+// eslint-disable-next-line no-unused-vars
 // Material Kit 2 React themes
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 
 // Material Kit 2 React routes
 import routes from "routes";
-
 export default function App() {
   const { pathname } = useLocation();
 
@@ -53,13 +55,15 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Routes>
-      
-        {getRoutes(routes)}
-        <Route path="/presentation" element={<Presentation />} />
-        <Route path="*" element={<Navigate to="/presentation" />} />
-      </Routes>
-    </ThemeProvider>
+    <CssBaseline />
+    
+    <Routes>
+      {getRoutes(routes)}
+      <Route path="/presentation" element={<Presentation />} />
+      <Route path="*" element={<Navigate to="/presentation" />} />
+       <Route path="/users" element={<UserDetails/>} />
+       <Route path="/users/:userid" element={<Users/>} />
+    </Routes>
+  </ThemeProvider>
   );
 }

@@ -5,6 +5,8 @@ import MKBox from "components/MKBox";
 // import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 import DesignBlocks1 from "./DB";
+import DesignBlocksp from "./DBpro";
+import DesignBlocks12 from "./DB2";
 // import DesignBlocksData from "./data/designBlocksData";
 // import DesignBlocks from "./DesignBlocks";
 import { Divider } from "@mui/material";
@@ -155,6 +157,9 @@ function PresentationPages() {
     </MKBox>
     </div>
     <DesignBlocks1></DesignBlocks1>
+    <DesignBlocks12></DesignBlocks12>
+    <DesignBlocksp></DesignBlocksp>
+    
     </div>
   
   );

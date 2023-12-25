@@ -6,12 +6,12 @@ import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 import ExampleCard1 from "pages/Presentation/components/ExampleCard/index1";
-import data1 from './data';
+import pro from './pro';
 
 
-function DesignBlocks1() {
-  const renderData = data1.map(({ title, items }) => (
-    <Grid container spacing={0} sx={{ mb: -15 }} key={title}>
+function DesignBlocksp() {
+  const renderData = pro.map(({ title, items }) => (
+    <Grid container spacing={0} sx={{ mb: 0 }} key={title}>
       <Grid item xs={0} lg={0}>
         <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 8 }}>
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
@@ -34,15 +34,14 @@ function DesignBlocks1() {
       
       
   
-      <div style={{ textAlign: 'right', marginBottom: '-90px', marginTop: '10px', marginLeft: 'auto' }}>
+  <div style={{ textAlign: 'right', marginBottom: '60px' }}>
   <a
-    href="http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/conference.html"
-    style={{ textDecoration: 'underline' }}
+    href="http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/project.html"
+    style={{ textDecoration: 'underline', marginLeft: "1100px" }}
   >
     See All Publication
   </a>
 </div>
-
 
 
 
@@ -68,11 +67,9 @@ function DesignBlocks1() {
       </Container>
      
       <Container sx={{ mt: 3 }}>{renderData}</Container>
-      <div style={{ textAlign: 'right', marginBottom: '60px', marginTop: '10px', marginLeft: 'auto' }}>
-  
-</div>
+      
     </MKBox>
   );
 }
 
-export default DesignBlocks1;
+export default DesignBlocksp;

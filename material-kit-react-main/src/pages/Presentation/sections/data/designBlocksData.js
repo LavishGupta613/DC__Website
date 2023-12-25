@@ -75,6 +75,7 @@ export default [
         des :"Blockchain, Cryptography and Network Security",
         route: "/sections/page-sections/TA5",
       },
+      
     ],
 
   },

@@ -28,13 +28,12 @@ function Presentation() {
         <Container
         >
           <Grid container item xs={12} lg={7} justifyContent="center" position="absolute" 
-           bottom ="200px" left="300px" mx="auto"
+           bottom ="30vh" left="20%" 
            >
             <MKTypography 
               variant="h1"
               
-              mt={-6}
-              mb={1}
+              
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3x1"],
@@ -53,7 +52,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              .
+              
             </MKTypography>
           </Grid>
         </Container>

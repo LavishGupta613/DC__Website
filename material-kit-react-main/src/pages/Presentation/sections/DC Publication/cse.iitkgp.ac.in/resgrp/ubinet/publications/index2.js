@@ -9,14 +9,28 @@ function Solve() {
   
   return (<div>
     <div className="about-us bg-gray-200">
-
-      <nav className="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+      <nav className="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
         <div className="container">
-        <a className="navbar-brand text-white" href="../index.html" rel="tooltip noreferrer" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-
+          <a
+            className="navbar-brand text-white"
+            href="../index.html"
+            rel="tooltip noreferrer"
+            title="Designed and Coded by Creative Tim"
+            data-placement="bottom"
+            target="_blank"
+          >
             <b>UbiSys@CSE,IITJ</b>
           </a>
-          <button className="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button
+            className="navbar-toggler shadow-none ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon mt-2">
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
