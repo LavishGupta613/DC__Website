@@ -12,9 +12,9 @@ function ExampleCard1({ image, name, count, pro, des }) {
         display="flex"
         alignItems="left"
         bgColor="white"
-        borderRadius="111px"
+        borderRadius="5vw"
         shadow="l1g"
-        width="80rem" 
+        width="75vw" 
         minHeight="8rem"
         sx={{
           overflow: "hidden",
@@ -31,8 +31,8 @@ function ExampleCard1({ image, name, count, pro, des }) {
       >
         {/* Left Half - Image */}
         <MKBox
-          width="10%" // Set the left half to 10%
-          minHeight="100%"
+          width="9vw" // Set the left half to 10%
+          minHeight="1vw"
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -54,13 +54,13 @@ function ExampleCard1({ image, name, count, pro, des }) {
 
         {/* Right Half - Name and Count */}
         <MKBox
-          width="78%" // Set the right half to 78%
+          width="78vw" // Set the right half to 78%
           minHeight="100%"
           display="flex"
           flexDirection="column"
           justifyContent="center"
           alignItems="flex-start" // Align text content to the left
-          paddingLeft="57px" // Add left margin of 57px
+          paddingLeft="1vw" // Add left margin of 57px
           borderRadius="0 10px 10px 0"
         >
           <MKTypography variant="h6" fontWeight="bold">

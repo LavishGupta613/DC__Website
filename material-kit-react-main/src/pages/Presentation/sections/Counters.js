@@ -31,7 +31,7 @@ function Counters() {
         <Grid container item xs={40} lg={30} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={3}>
             {/* Left Column with Image */}
-            <img src={logo} alt="UbiSys Image" style={{ width: "230px", height: "240px", marginBottom: "-50px" }} />
+            <img src={logo} alt="UbiSys Image" style={{ width: "16vw", height: "16vw", marginBottom: "-2vw" }} />
             <DefaultCounterCard
               head={<div><div style={{ marginTop: '50px' }}></div>UbiSys</div>}
               style={{ marginTop: '-10px' }}

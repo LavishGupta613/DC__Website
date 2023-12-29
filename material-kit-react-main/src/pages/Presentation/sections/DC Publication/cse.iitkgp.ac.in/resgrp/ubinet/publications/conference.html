@@ -30,7 +30,7 @@
       display: none;
       position: absolute;
       top: 100%;
-      left: 0;
+      left: 150px;
       background-color: #f9f9f9;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -357,309 +357,369 @@
                                                 <ul id="options-list"></ul>
                                               </div>
                                           
-                                          
-                                            <div class="filtering-button">
-                                              <div class="dropdown">
-                                              <a >  <button onclick="myFunction()" class="dropbtn">Conference </button></a>
-                                                <div id="myDropdown" class="dropdown-content">
-                                                  <input type="text" placeholder="Search.." id="myInput" oninput="filterFunction()" onclick="stopPropagation(event)">
-                                                  <a class="btn btn-primary" data-filter="*" href="#All Publication"> All Publications</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat1" href="#Journal">Journal</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat2" href="#Conference (FULL)">Conference (Full)</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat3" href="#Conference (Poster)">Conference (Poster)</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat4" href="#Workshop">Workshop</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat5" href="#Network">Network</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat6" href="#HCI">HCI</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat7" href="#Distributed Systems">Distributed Systems</a>
-                                                  <a class="btn btn-secondary" data-filter=".cat8" href="#Sensing">Sensing</a>
+                                          <div class="filtering-button">
+                                                <div class="dropdown">
+                                                    
+                                                    <a><button onclick="toggleDropdown()" class="dropbtn">Conference</button></a>
+                                                    <input type="text" placeholder="Search.." id="myInput" onclick="handleInputClick(event)" oninput="filterButtons()">
+                                                    <a ><button onclick="applyCategoryFilter()" class="dropbtn">Filter</button></a>
+                                                    <div id="myDropdown" class="dropdown-content">
+                                                        <a class="btn btn-primary" data-filter="*" href="#All Publication"> All Publications</a>
+                                                        <a class="btn btn-secondary cat1" data-filter=".cat1" href="#Journal">Journal</a>
+                                                        <a class="btn btn-secondary cat2" data-filter=".cat2" href="#Conference (FULL)">Conference (Full)</a>
+                                                        <a class="btn btn-secondary cat3" data-filter=".cat3" href="#Conference (Poster)">Conference (Poster)</a>
+                                                        <a class="btn btn-secondary cat4" data-filter=".cat4" href="#Workshop">Workshop</a>
+                                                        <a class="btn btn-secondary cat5" data-filter=".cat5" href="#Network">Network</a>
+                                                        <a class="btn btn-secondary cat6" data-filter=".cat6" href="#HCI">HCI</a>
+                                                        <a class="btn btn-secondary cat7" data-filter=".cat7" href="#Distributed Systems">Distributed Systems</a>
+                                                        <a class="btn btn-secondary cat8" data-filter=".cat8" href="#Sensing">Sensing</a>
+                                                    </div>
                                                 </div>
-                                              </div>
+                                            </div>
                                             </div>
                                     <div class="service-area section">
                                         <div class="container">
                                             <div class="grid pub-list">
                                                 <ol>
                                                     <div class="grid-item cat1 cat7" title="this is " description="DES 1">
-                                                        <li><a href="http://192.168.74.172:3001/users/1"></a> Monik Raj Behera, and Suchetana Chakraborty, "Local-FedGT: Decentralized Federated Learning using Game Theory in Dynamic Topology" accepted in the proc. of COMENSTS 2024 [poster paper]</em>.</li>  
+                                                        <li>Monik Raj Behera, and Suchetana Chakraborty, "Local-FedGT: Decentralized Federated Learning using Game Theory in Dynamic Topology" accepted in the proc. of COMENSTS 2024 [poster paper].</li>  
                                                                            
-                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
-                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/conference.html')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/conference.html')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">Print PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">Overview</button>
-                                                            <button top-margin="-10px" class="custom-button" onclick="openURL('http://192.168.74.172:3001/users/1')">Project</button>
+                                                          
+                                                            <button top-margin="-10px" class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/14')">Project</button>
                                                         </div>
                                                         <div class="grid-item cat2 cat5">
-                                                            <li ><a href="http://192.168.74.172:3001/users/2">Link</a>
-                                                                Monik Raj Behera, and Suchetana Chakraborty, "Local-FedGT: Decentralized Federated Learning using Game Theory in Dynamic Topology" accepted in the proc. of COMENSTS 2024 [poster paper]                                                              <b>EWSN 2023</b> 
-                                                                <a href="https://arxiv.org/abs/2301.03722" target="_blank">Pre-print</a>,
-                                                                <a href="https://github.com/arghasen10/fedput-implement" target="_blank">Source Code</a>
+                                                            <li >
+                                                            </a>
+                                                            Ananya Mondal, Martin Kaushal, and Suchetana Chakraborty, "Sense as you go: A context-aware adaptive sensing framework for on-road driver profiling" in the proc. of the 10th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys '23), pp. 89–98.                                           <b>EWSN 2023</b> 
+                                                               
                                                                 <br>
                                                                 
                                                                 <!-- Buttons with styles -->
                                                                 <button style="margin-bottom: 20;" class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                                 <button style="margin-bottom: 20;" class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                                 <button style="margin-bottom: 20;" class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                                <button style="margin-bottom: 20;" class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                                <button style="margin-bottom: 20;" class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/15')">Project</button>
                                                             </li>
                                                         </div>
-                                                        
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    <div class="grid-item cat1 cat7">
+                                                        <div class="grid-item cat1 cat7">
                                                         <br/>
-                                                        <li><a href="http://192.168.74.172:3001/users/3">Link</a>Example 2</em>,
-                                                            <b>IEEE Transactions on Services Computing</b> (Accepted: April 17, 2023) <a href="https://doi.org/10.1109/TSC.2023.3270921" target="_blank">Early Access</a></li>
+                                                        <li>
+                                                            Garvit Chugh, Suchetana Chakraborty, Ravi Bhandari and Sandip Chakraborty, "Exploring Earables to Monitor Temporal Lack of Focus during Online Meetings to Identify Onset of Neurological Disorders",  in the proc. of  IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE) 2023, pp. 126--137, doi:10.1145/3580252.3586981.</li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/16')">Project</button>
                                                             <br>
                                                     </div>
                                                     <div class="grid-item cat2 cat8">
                                                         <br/>
-                                                        <li>Example 3 <em>"Acconotate: Exploiting Acoustic Changes for Automatic Annotation of Inertial Data"</em>, <b>DCOSS-IoT 2023</b>, ,<a href="https://github.com/stilllearningsoumya/acconotate"
-                                                                target="_blank">Source Code and Partial Dataset</a>, <a href="https://docs.google.com/presentation/d/1UUBJHT5jJccThNckkkOYgTZKo4d11a3WikLp2Y09kzk/edit?usp=sharing" target="_blank">Presentation Slides</a></li>
+                                                        <li>Garvit Chugh and Suchetana Chakraborty, "Demonstration of LegalHelper: A Low-cost tool for Smart Translation and Creation of Legal Contracts", in the proc. of COMSNETS 2023 [Demo Paper]</li>
                                                                 <button class="custom-button"  onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button"  onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button"  onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button"  onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button"  onclick="openURL('http://192.168.43.229:3001/users/17')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat1 cat5">
                                                         <br/>
-                                                        <li><a href="http://192.168.74.172:3001/users/6">Link</a>EXample 4 <em>"Improving UE Energy Efficiency through Network-aware Video Streaming over 5G"</em>, <b>IEEE Transactions on Network and Service Management</b>                                                            (Accepted: February 03, 2023) <a href="https://ieeexplore.ieee.org/document/10056411" target="_blank">Early Access</a></li>
+                                                        <li>Garvit Chugh, Suchetana Chakraborty and Sandip Chakraborty, <em>"enVolve+: Inertial Sensing to Reinforce Involvement of Silent Listeners during an Online Interaction"</em>, in the proc. of COMSNETS 2023 [Poster Paper]                                                        </li>
                                                         <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" top-margin="-10px" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" top-margin="-10px" onclick="openURL('http://192.168.43.229:3001/users/18')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat2 cat6">
+                                                        <br/>
+                                                        <li>Dhruv Avinash Patel, Harsh Anand and Suchetana Chakraborty, "crossTrustChain: CrossChain Interoperability using Multivariate Trust Models", in the proc. of COMSNETS Cybersecurity and Privacy Workshop 2023</li>
+                                                        <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" top-margin="-10px" onclick="openURL('http://192.168.43.229:3001/users/19')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat1 cat5">
                                                       <br/>
-                                                      <li><a>EXample 3_ <em>"Improving UE Energy Efficiency through Network-aware Video Streaming over 5G"</em>, <b>IEEE Transactions on Network and Service Management</b>                                                            (Accepted: February 03, 2023) <a href="https://ieeexplore.ieee.org/document/10056411" target="_blank">Early Access</a></li>
+                                                      <li>Ramesh Singh, Radhika Sukapuram, and Suchetana Chakraborty,   <em>“Mobility-aware MultiAccess Edge Computing for Multiplayer Augmented and Virtual Reality Gaming”</em>to appear in the proc. of the 21st International Symposium on Network Computing and Applications (NCA 2022). IEEE</li>
                                                       <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                           <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.google.com')">DOI</button>
                                                           <button class="custom-button" top-margin="-10px" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                          <button class="custom-button" top-margin="-10px" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                          <button class="custom-button" top-margin="-10px" onclick="openURL('http://192.168.43.229:3001/users/20')">Project</button>
                                                   </div>
                                                     <div class="grid-item cat2 cat6 cat8">
                                                         <br/>
-                                                        <li>Example 5 <em>"Exploring Earables to Monitor Temporal Lack of Focus during Online Meetings to Identify Onset of Neurological Disorders"</em>,
+                                                        <li>Garvit Chugh, Suchetana Chakraborty, Ravi Bhandari and Sandip Chakraborty, <em>enVolve: Are You Listening? Inertial Sensing to Monitor the Involvement of Silent Listeners during an Online Interaction "</em> to appear in the proc. of the  3rd International Workshop on Earable Computing (EarComp'22). ACM.
                                                             <b>IEEE/ACM CHASE 2023</b>, <a href="https://youtu.be/mwRE614BxU8" target="_blank">Video teaser</a></li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/21')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat2 cat6 cat8">
                                                         <br/>
-                                                        <li>Example 6 <em>"ExpresSense: Exploring a Standalone Smartphone to Sense Engagement of Users from Facial Expressions Using Acoustic Sensing"</em>,
-                                                            <b>ACM CHI 2023</b>, <a href="https://github.com/Pragma-cpu/ExpresSense" , target="_blank">Source Code and Dataset</a>, <a href="https://arxiv.org/pdf/2301.06762.pdf" target="_blank">Pre-print</a>,
-                                                            
-                                                            <a href="https://www.youtube.com/watch?v=p5IqMn4Q7FM" target="_blank">Video teaser</a></li>
+                                                        <li>Anirban Das, Kartik Narayan and Suchetana Chakraborty, "Leveraging ambient sensing for the estimation of curiosity-driven human crowd," 2022 IEEE International Systems Conference (SysCon), 2022, pp. 1-8, doi: 10.1109/SysCon53536.2022.9773844
+                                                            </li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
-                                                    </div>
-                                                   
-                                                    <div class="grid-item cat2 cat8">
-                                                        <br/>
-                                                        <li>Example 7<em>"DriCon: On-device Just-in-Time Context Characterization for Unexpected Driving Events"</em>, <b>IEEE PerCom 2023</b>, <a href="https://github.com/debasree08/DriCon"
-                                                                , target="_blank">Source Code and Dataset</a>, <a href="https://youtu.be/r9KtejjXpPw" target="_blank">Video teaser</a></li>
-                                                                <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
-                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
-                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/22')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat2 cat7">
                                                         <br>
-                                                        <li>Example 8<em>"DisProTrack: Distributed Distributed Provenance Tracking over Silent Serverless Applications"</em>, <b>IEEE INFOCOM 2023</b>,
-                                                            <a href="https://github.com/usatpath01/DisProTrack" target="_blank">Source Code</a></li>
+                                                        <li>Anirban das and Suchetana Chakraborty, "Experience: Developing a testbed for ambient sensing and in-network data processing" to appear in the proceedings of COMSNETS 2022</li>
                                                             <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/23')">Project</button>
                                                         
                                                     </div>
+                                                    <div class="grid-item cat2 cat7">
+                                                        <br>
+                                                        <li> Muzzafer Ali and Suchetana Chakraborty, " Enabling video conferencing in low bandwidth", to appear in the proceedings of IEEE CCNC 2022. [Poster Presentation]</li>
+                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/24')">Project</button>
+                                                        
+                                                    </div>
+                                                    <div class="grid-item cat2 cat8">
+                                                        <br/>
+                                                        <li>Suchetana Chakraborty and Radhika Sukapuram, "Multi-Access Edge Computing for Urban Informatics", to appear in the proceedings of ICDCN 2022." [Tutorial Session]</li>
+                                                                <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/25')">Project</button>
+                                                    </div>
+                                                    
                                                     
                                                     <div class="grid-item cat3 cat6 cat8">
                                                         <br/>
-                                                        <li> Example 9 <em>"enVolve+: Inertial Sensing to Reinforce Involvement of Silent Silent Listeners during an Online Interaction"</em>, <b>COMSNETS 2023</b><br>
+                                                        <li> Anirban Das, Rohan Gupta and Suchetana Chakraborty, "A study on real-time edge computed occupancy estimation in an indoor environment" [Poster Paper], to appear in the proceedings of 12th International Conference on Communication Systems and Networks (COMSNETS). Bengaluru. January 2020. <br>
                                                         <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button top-margin="-10px"  class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button top-margin="-10px"  class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/26')">Project</button>
                                                         </li>
                                                        </div>
                                                     <div class="grid-item cat3 cat6 cat8">
                                                         <br>
-                                                        <li> Example 10 <em>"FreeSteer: A Smartphone Application for Detecting Anxiety in Novice Drivers through Smart Glasses"</em>, <b>COMSNETS 2023</b></li>
+                                                        <li> Manan Sharma, Shivam Tiwari, Suchetana Chakraborty, Dip Sankar Banerjee, "Behavior Analysis through Routine Cluster Discovery in Ubiquitous Sensor Data", to appear in the proceedings of 12th International Conference on Communication Systems and Networks (COMSNETS). Bengaluru. January 2020. </li>
                                                         <button top-margin="-5px" class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button top-margin="-5px" class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button top-margin="-5px"class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button top-margin="-5px" class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button top-margin="-5px" class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/27')">Project</button>
                                                     </div>
                                                  
                                                     <div class="grid-item cat1 cat6 cat8">
                                                         <br>
-                                                        <li>Exaple 11 Soumyajit Chatterjee, Abhijit Roy, Santanu Mandal, Subrata Nandi, Sandip Chakraborty, Mousumi Saha, Sujoy Saha: <em>"AQuaMoHo: Localized Low-Cost Outdoor Air Quality Sensing over a Thermo-Hygrometer"</em>,
-                                                            <b>ACM Transactions on Sensor Networks</b>, Accepted: December 15, 2022, <a href="https://arxiv.org/abs/2204.11484" target="_blank">Preprint</a></li>
+                                                        <li>Nilotpola Sarma, Suchetana Chakraborty and Dip Sankar Banerjee, "Learning and Annotating Activities for Home Automation using LSTM", in proc. of the workshop of Machine Intelligence in Networked Data and Systems (MINDS), COMSNETS 2019, pp.631-636, Bangaluru, India. (Best Paper Award) DOI: 10.1109/COMSNETS.2019.8711433 </li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/28')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat2 cat8">
                                                         <br>
-                                                        <li>Example 12 <em>"mmAssist: Passive Monitoring of Driver's Attentiveness Using mmWave Sensors"</em>, <b>COMSNETS 2023</b>, <a href="https://github.com/arghasen10/mmAssist"
-                                                                target="_blank">Source Code</a></li>
+                                                        <li>Anirban Das, Rohan Gupta and Suchetana Chakraborty, "Significance of Adaptive Sensing for Smart Building Monitoring: A Practical Study", in proc. of the workshop of Wild and Crazy ideas on the interplay between IoT and Big Data (WACI), COMSNETS 2019, pp. 684-689, Bangaluru, India. DOI: 10.1109/COMSNETS.2019.8711469</li>
                                                                 <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/29')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat2 cat7">
                                                         <br>
-                                                        <li>Example 13 <em>"Private Certifier Interaction"</em>, <b>NDSS 2023</b>, <a href="https://eprint.iacr.org/2022/1302"
-                                                                target="_blank">Preprint</a>, <a href="https://github.com/ghoshbishakh/pci" target="_blank">Source Code</a></li>
+                                                        <li>Anirban Das, Rohan Gupta and Suchetana Chakraborty, "Motivating In-network Fusion for Smart Infrastructure Monitoring", in the proc. of the 11th International Conference on Communications Systems and Networks, COMSNETS 2019, pp. 513-516, Bangaluru, India. DOI: 10.1109/COMSNETS.2019.8711204 </li>
                                                                 <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/30')">Project</button>
                                                     </div>
                                                   
                                                     <div class="grid-item cat2 cat8">
                                                         <br>
-                                                        <li>Example 14<em>"AmicroN: Framework for Generating Micro-Activity Annotations for Human Activity Recognition"</em>, <b>IEEE SmartComp 2022 (Short Paper)</b></li>
+                                                        <li>Nilotpola Sarma, Suchetana Chakraborty and Dip Sankar Banerjee, "Activity Recognition through Feature Learning and Annotations using LSTM", in the proc. of the 11th International Conference on Communications Systems and Networks, COMSNETS 2019, pp. 444-447, Bangaluru, India. DOI: 10.1109/COMSNETS.2019.8711147 </li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/31')">Project</button>
                                                     </div>
                                                   
                                                     <div class="grid-item cat2 cat6 cat8">
                                                         <br>
-                                                        <li>Example 15 <em>"DriBe: On-road Mobile Telemetry for Locality-neutral Driving Behavior Annotation"</em>, <b>IEEE MDM 2022</b></li>
+                                                        <li>Rohan, Jayashree Phukan, Suchetana Chakraborty, "RDDF: Rating Driven Data Forwarding in Vehicular Network", in proc. of the IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS 2018) , pp. 1-6, Indore, India. DOI: 10.1109/ANTS.2018.8710067 </li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/32')">Project</button>
                                                     </div>
                                                    
                                                     <div class="grid-item cat3 cat8">
                                                         <br>
-                                                        <li>Example 16 <em>"Demo Abstract: Understanding Internal Structure Of Hollow Objects Using Acoustics"</em>, <b>ACM/IEEE IPSN 2022 (Demo)</b></li>
+                                                        <li>Rohit Sharma and Suchetana Chakraborty, "BlockAPP: Using Blockchain for Authentication and Privacy Preservation in IoV", in the proc. of IEEE GLOBECOM 2018 Workshops: Blockchain in IoT, pp. 1-6,  Abu Dhabi, UAE, DOI: 10.1109/GLOCOMW.2018.8644389 .</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/33')">Project</button>
                                                     </div>
                                                   
                                                     <div class="grid-item cat2 cat7">
                                                         <br>
-                                                        <li>Example 17 <em>"Proof of Federated Training: Accountable Cross-Network Model Training and Inference"</em>, <b>IEEE ICBC 2022</b>, </li>
+                                                        <li>Anirban Das and Suchetana Chakraborty, [Poster paper]:"SDCF: Sensory Data Collection Framework for Smart Building application", in the proc. of IEEE Sensors 2018, pp. 1-4, New Delhi, India, DOI: 10.1109/ICSENS.2018.8589950 . </li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/34')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat3 cat6 cat8">
                                                         <br>
-                                                        <li>Example 18<em>"Who is Using the Phone within the Car? Blind Device Localization in a Car with Unimodal Acoustic Signature"</em>, <b>ACM HotMobile 2022 (Posters)</b></li>
+                                                        <li>Anirban Das and Suchetana Chakraborty, "Context Aware Data Collection Framework for Critical Infrastructure Monitoring System",  in the proc. of the 10th ACM Wireless of the Students, by the Students and for the Students Workshop (ACM S3 Workshop) in conjuntcion with ACM MOBICOM 2018, pp. 11-13, New Delhi, India, DOI: 10.1145/3264877.3264881. </li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/35')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat4 cat6 cat8">
                                                         <br>
-                                                        <li>Example 19 <em>"Why Slammed the Brakes On? Auto-annotating Driving Behaviors from Adaptive Causal Modeling"</em>, <b>IEEE PerVehicle 2022 (in conjunction with IEEE PerCom 2022)</b></li>
+                                                        <li>Rohit Sharma and Suchetana Chakraborty, "B2VDM: Blockchain Based Vehicular Data Management",  in the proc. of the 7th International Conference of Advances in Computing, Communications and Informatics (ICACCI 2018), pp. 2337-2343 , Bangalore, India, DOI: 10.1109/ICACCI.2018.8554369 .</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/36')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat2 cat6 cat8">
                                                         <br>
-                                                        <li>Example 20 Nirmalya Roy, Bivas Mitra, Sandip Chakraborty: <em>"CogAx: Early Assessment of Cognitive and Functional Impairment from Accelerometry"</em>, <b>IEEE PerCom 2022</b></li>
+                                                        <li>Sandip Chakraborty, Suchetana Chakraborty, Sushanta Karmakar and Hridoy Sankar Dutta, "Hierarchical Topology Adaptation for Distributed Convergecast Applications", in proc. of the 29th ACM Symposium on Applied Computing, Dependable and Adaptive Distributed Systems (ACM SAC), pp. 405 - 407, 2014, Gyeongju, Korea.</li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/37')">Project</button>
                                                            
                                                     </div>
                                                     <div class="grid-item cat2 cat6 cat8">
                                                         <br>
-                                                        <li>Example 21 Bivas Mitra: <em>"SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing"</em>,
-                                                            
-                                                            <b>COMSNETS 2022</b></li>
+                                                        <li>Sandip Chakraborty, Subhrendu Chattopadhyay, Suchetana Chakraborty and Sukumar Nandi, "Defending Concealedness in IEEE 802.11n", in proc. of the 6th International Conference on Communication Systems and Networks (IEEE/ACM COMSNETS), pp. 1 - 8, 2014, Bangalore, India.</li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/38')">Project</button>
                                                     </div>
                                                    
                                                     <div class="grid-item cat3 cat6">
                                                         <br>
-                                                        <li>Example 22: <em>"Quantifying Students' Involvement during Virtual Classrooms: A Meeting Wrapper for the Teachers"</em>, <b>India-HCI 2021</b></li>
+                                                        <li>Sandip Chakraborty, Suchetana Chakraborty, Sukumar Nandi, "Beyond Conventional Routing Protocols: Opportunistic Path Selection for IEEE 802.11s Mesh Networks" in the proc. of the 24th Annual IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (IEEE PIMRC), pp. 3224 - 3228, 2013, London, UK.</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/39')">Project</button>
                                                     </div>
                                                    
                                                     <div class="grid-item cat3 cat5">
                                                         <br>
-                                                        <li>Example 23<em>"An ns3-based Energy Module of 5G NR User Equipments for Millimeter wave Networks"</em>, <b>IEEE INFOCOM 2021 Posters</b></li>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory, Sukumar Nandi, and Sushanta Karmakar, "RelBAS: Reliable Data Gathering from Border Area Sensors", in the proc. of the 18th IEEE Symposium on Computers and Communications (IEEE ISCC), pp. 904 - 909, 2013, Split, Croatia.</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/40')">Project</button>
                                                     </div>
                                                    
                                                     <div class="grid-item cat3 cat6 cat8">
                                                         <br>
-                                                        <li>Example 24 <em>"Note-on-Watch: Live Scribing from Board-works to Class-notes"</em>, <b>ACM MobileHCI LBR 2020</b></li>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory, Sukumar Nandi, and Sushanta Karmakar, "Exploring Gradient in Sensor Deployment Pattern for Data Gathering with Sleep based Energy Saving", in the proc. of the 9th International Wireless Communications and Mobile Computing Conference (IEEE IWCMC), pp. 1394 - 1399, 2013, Cagliari, Sardinia, Italy.</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/41')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat3 cat5 cat6">
                                                         <br>
-                                                        <li>Example 25 <em>"Aco-Wi : Acoustic Initiated Wi-Fi Peer-group Communication for Opportunistic Messaging"</em>,
-                                                            <b>ACM MobileHCI LBR 2020</b></li>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory, Sukumar Nandi, and Sushanta Karmakar, "Energy-efficient Data Gathering for Road-side Sensor Networks ensuring Reliabiity and Fault-tolerance", in the proc. of 27th IEEE International Conference on Advanced Information Networking and Applications (AINA), pp. 189 - 196, 2013, Barcelona, Spain</li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/42')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat2 cat6">
                                                         <br>
-                                                        <li>Example 26 <em>"Disaster Strikes! Internet Blackout! What’s the Fate of Crisis Mapping?"</em>, <b>ACM MobileHCI 2020</b></li>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory and Sukumar Nandi, "Side Channel Attacks: Current Researches and Future Scopes", in the proc. of the National Workshop on Network Security, 2013, Tezpur, Assam, India.</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/43')">Project</button>
                                                     </div>
                                                     <div class="grid-item cat3 cat7">
                                                         <br>
-                                                        <li>Example 27 <em>"System Call Interception for Serverless Isolation"</em>, <b>ACM SIGCOMM 2020 Posters</b></li>
+                                                        <li>Suddhasil De, Suchetana Chakraborty, Sukumar Nandi, and Diganta Goswami, "Supporting Tuple Space based Mobile Middleware over Unreliable Mobile Infrastructures : Design and Formal Specifiations", in the proc. of IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS), pp. 123 - 125, 2012, Bangalore, India.</li>
                                                         <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/44')">Project</button>
                                                     </div>
                                                                                                  <div class="grid-item cat1 cat8">
                                                         <br>
-                                                        <li>Example 28 <em>"GroupSense: A Lightweight Framework for Group Identification."</em>, <b>IEEE Transactions on Mobile Computing</b>, 18(12):
-                                                            2856-2870 (2019)</li>
+                                                        <li>Suddhasil De, Suchetana Chakraborty, Diganta Goswami, and Sukumar Nandi, "Formalization of Discovery and Communication Mechanisms of Tuple Space Based Mobile Middleware for Underlying Unreliable Infrastructure", in the proc. of 2nd IEEE International Conference on Parallel, Distributed and Grid Computing (PDGC), pp. 580 - 585, 2012, Solan, India.</li>
                                                             <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
                                                             <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
                                                             <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
-                                                            <button class="custom-button" onclick="openURL('https://ubisysresearch.github.io/')">Project</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/45')">Project</button>
                                                     </div>
+                                                    <div class="grid-item cat3 cat2 cat1">
+                                                        <br>
+                                                        <li>Suddhasil De, Diganta Goswami, Sukumar Nandi, and Suchetana Chakraborty, "Formalization of a Fully-Decoupled Reactive Tuple  space model for Mobile Middleware", in the proc. of 5th International Conference on MOBILe Wireless MiddleWARE, Operating Systems, and Applications (MOBILWARE), 2012, Berlin, Germany.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/46')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat5 cat6 cat7">
+                                                        <br>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory, Sukumar Nandi, and Sushanta Karmakar, "A Novel Crash-Tolerant Data Gathering in Wireless Sensor Networks", in the proc. of 13th IEEE/IFIP Network Operations and Management Symposium (NOMS), pp. 940 - 946, 2012, Maui, Hawaii, USA.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/47')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat2 cat5">
+                                                        <br>
+                                                        <li>Ankush Rai, Ferdous Barbhuiya, Arijit Sur, Santosh Biswas, Suchetana Chakraborty and Sukumar Nandi, "Exploit Detection Techniques for STP using Distributed IDS", in the World Congress on information and Communication Technologies (WICT), pp. 939 - 944, 2011, Mumbai, India.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/48')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat2 cat4">
+                                                        <br>
+                                                        <li>Suchetana Chakrabory and Sushanta Karmakar, "A Novel Approach for Adaptive Data Gathering in Sensor Networks by Dynamic Spanning Tree Switching" , in the proc. of the International Conference on Advances in Computing and Communications (ACC), Springer (CCIS), vol-191, pp. 585 - 594, 2011, Kochi, India.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/49')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat1 cat8">
+                                                        <br>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory, Sukumar Nandi, and Sushanta Karmakar, "A Reliable and Total Order Tree Based Broadcast in Wireless Sensor Network", in the proc. of the 2nd International Conference on Computer and Communication Technology (ICCCT), pp. 618 -623, 2011, Allahabad, India.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/50')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat2 cat3">
+                                                        <br>
+                                                        <li>Suchetana Chakraborty, Sandip Chakrabory, Sukumar Nandi, and Sushanta Karmakar, "A Tree-Based Local Repairing Approach for Increasing Lifetime of Query Driven WSN" , in the proc. of the 2011 International Symposium on Pervasive Systems, Algorithms, and Networks (I-SPAN), pp. 475 - 482, 2011, Dalian, China.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/51')">Project</button>
+                                                    </div>
+                                                    <div class="grid-item cat2 cat7">
+                                                        <br>
+                                                        <li>Suchetana Chakrabory and Sushanta Karmakar, "Adaptive Convergecast by Distributed Topology Switching" , in the proc. of the 29th Brazilian Symposium on Computer Networks and Distributed Systems (SBRC), pp. 545 - 557, 2011, Campo Grande, Brazil.</li>
+                                                            <button class="custom-button" onclick="openURL('https://www.youtube.com')">Videos</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.google.com')">DOI</button>
+                                                            <button class="custom-button" onclick="openURL('https://www.iitj.ac.in/')">PDF</button>
+                                                            <button class="custom-button" onclick="openURL('http://192.168.43.229:3001/users/52')">Project</button>
+                                                    </div>
+
+
                                                 </ol>
                                             </div>
                                         </div>
@@ -668,7 +728,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="load-more-btn text-center">
-                                            <a href="https://dblp.org/pid/28/9571.html" class="primary-btn" target="_blank">See all Publications</a>
+                                            <!-- <a href="https://dblp.org/pid/28/9571.html" class="primary-btn" target="_blank">See all Publications</a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -691,7 +751,7 @@
                             All rights reserved. Copyright ©
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> by UbiNet@CSE,IITKGP.
+                            </script> by UbiSys@CSE,IITJ.
                         </p>
                     </div>
                 </div>
@@ -714,7 +774,6 @@
 
     <script src="../assets/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/plugins/isotope.pkgd.min.js"></script>
-
     <script>
         // get the element to animate
         function myFunction() {
@@ -754,35 +813,134 @@
         }
 </script>
     <script>
-
-        var $grid = $('.grid').isotope({
-            // set itemSelector so .grid-sizer is not used in layout
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            animationOptions: {
-                duration: 500,
-                easing: 'zoom-in'
-            },
-            masonry: {
-                // use element for option
-                columnWidth: '.grid-item'
-            },
-            transitionDuration: '.9s'
-        })
-
-        $('.filtering-button').on('click', 'a', function() {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-         $('.filtering-button').on('click', 'a', function() {
-            $('.filtering-button a').removeClass('btn-primary');
-            $('.filtering-button a').addClass('btn-secondary');
-            $(this).addClass('btn-primary');
-            $(this).removeClass('btn-secondary');
-        });
+        function handleInputClick(event) {
+            // Stop propagation to prevent the click event from reaching the document and closing the dropdown
+            stopPropagation(event);
+        
+            // Toggle the dropdown
+            toggleDropdown();
+        }
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    
+        function filterButtons() {
+            var input, filter, div, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.querySelectorAll(".dropdown-content a");
+    
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    
+        function stopPropagation(event) {
+            event.stopPropagation();
+        }
+    
+        function applyFilter(filterClass) {
+            var div = document.getElementById("myDropdown");
+            var a = div.querySelectorAll(".dropdown-content a");
+    
+            for (var i = 0; i < a.length; i++) {
+                a[i].style.display = "none";
+            }
+    
+            var filteredElements = div.querySelectorAll('.dropdown-content ' + filterClass);
+            for (var i = 0; i < filteredElements.length; i++) {
+                filteredElements[i].style.display = "";
+            }
+    
+            // Apply the same filter to the grid items
+            var gridItems = document.querySelectorAll('.grid-item');
+            for (var i = 0; i < gridItems.length; i++) {
+                if (gridItems[i].classList.contains(filterClass.substring(1))) {
+                    gridItems[i].style.display = "";
+                } else {
+                    gridItems[i].style.display = "none";
+                }
+            }
+        }
+    
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
+    <script>
+        
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            transitionDuration: '.9s'
+        });
+    
+        function applyCategoryFilter() {
+            var selectedCategory = $('#myDropdown a.btn-primary').attr('data-filter');
+            $grid.isotope({ filter: selectedCategory });
+        }
+        function applyFilter(filterValue) {
+            $grid.isotope({ filter: filterValue });
+        }
+        
+    
+        function applySearchFilter(filterValue) {
+            $grid.isotope({
+                filter: function () {
+                    return $(this).text().toUpperCase().indexOf(filterValue.toUpperCase()) > -1;
+                },
+                transitionDuration: '.9s'
+              
+                
+            },
+            );
+        }
+        
+        $('.filtering-button').on('click', 'a', function () {
+            var filterValue = $(this).attr('data-filter');
+    
+            // Set the full name of the button as the search input value
+            if ($(this).attr('data-filter')) {
+                $('#myInput').val($(this).text());
+            }
+    
+            // Check if it's a search filter or category filter
+            
+            
+                // Apply category filter
+                applyCategoryFilter(filterValue);
+    
+    
+            // Toggle classes for styling
+            $('.filtering-button a').removeClass('btn-primary').addClass('btn-secondary');
+            $(this).addClass('btn-primary').removeClass('btn-secondary');
+        });
+    
+        // Additional function for handling search input changes
+        function handleSearchInput() {
+            var searchTerm = $(this).val();
+            applySearchFilter(searchTerm);
+        }
+    
+        function toggleDropdown() {
+            $('#myDropdown').toggleClass('show');
+        }
+    
+        $('#myInput').on('input', handleSearchInput);
+</script>
 </body>
 
 </html>

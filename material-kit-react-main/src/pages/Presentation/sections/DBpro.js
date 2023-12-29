@@ -12,8 +12,8 @@ import pro from './pro';
 function DesignBlocksp() {
   const renderData = pro.map(({ title, items }) => (
     <Grid container spacing={0} sx={{ mb: 0 }} key={title}>
-      <Grid item xs={0} lg={0}>
-        <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 8 }}>
+      <Grid item xs={12} lg={0}>
+        <MKBox position="sticky" top="100px" pb={{ xs: 5, lg: 7 }}>
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
             {title}
           </MKTypography>
@@ -22,9 +22,10 @@ function DesignBlocksp() {
       <Grid item xs={2} lg={12}>
         <Grid container spacing={-10}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={4} md={7} sx={{ mb: -4 }} key={name}>
+            <Grid item xs={4} md={7} sx={{ mb: -4 }} key={name} >
               <Link to={route}>
                 <ExampleCard1 image={image} name={name} count={count} des={des} pro={pro} />
+               
               </Link>
             </Grid>
           ))}

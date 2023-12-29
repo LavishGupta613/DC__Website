@@ -35,7 +35,7 @@ export const Users = () => {
      <MKTypography variant="h3" mb={0}>Publication</MKTypography> 
      <MKTypography variant="body2" mb={0}> {user.paper}</MKTypography>
      <MKTypography variant="h3" mb={0}>Details</MKTypography> 
-     <MKTypography variant="body2" mb={-2}> {user.deatils}</MKTypography>
+     <MKTypography variant="body2" mb={-2}> {user.details}</MKTypography>
     
     </BaseLayout>
     

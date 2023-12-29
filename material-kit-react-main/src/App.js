@@ -1,38 +1,29 @@
-/**
-=========================================================
- React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { useEffect } from "react";
-
-// react-router components
+// App.js
+import React, { useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-
-// @mui material components
-
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import UserDetails from "pages/Presentation/sections/tempalte/UserDetails";
 import { Users } from "pages/Presentation/sections/tempalte/Users";
-// eslint-disable-next-line no-unused-vars
-// Material Kit 2 React themes
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
-
-// Material Kit 2 React routes
 import routes from "routes";
-export default function App() {
+// Create a global variable for dynamicLink
+window.dynamicLink = ""; // Set an initial value
+
+const App = () => {
   const { pathname } = useLocation();
+  // const [dynamicLink, setDynamicLink] = useState("");
+
+  // useEffect(() => {
+    // Update the dynamic link whenever the pathname changes
+    // const newDynamicLink = `http://${window.location.hostname}:/users/`;
+    
+    // setDynamicLink(newDynamicLink);
+
+    // Update the global variable for external access
+    // window.dynamicLink = newDynamicLink;
+  // }, [pathname]);
 
   // Setting page scroll to 0 when changing the route
   useEffect(() => {
@@ -55,15 +46,19 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-    <CssBaseline />
-    
-    <Routes>
-      {getRoutes(routes)}
-      <Route path="/presentation" element={<Presentation />} />
-      <Route path="*" element={<Navigate to="/presentation" />} />
-       <Route path="/users" element={<UserDetails/>} />
-       <Route path="/users/:userid" element={<Users/>} />
-    </Routes>
-  </ThemeProvider>
+      <CssBaseline />
+      <Routes>
+        {getRoutes(routes)}
+        <Route path="/presentation" element={<Presentation />} />
+        <Route path="*" element={<Navigate to="/presentation" />} />
+        <Route path="/users" element={<UserDetails />} />
+        <Route path="/users/:userid" element={<Users />} />
+      </Routes>
+      
+      {/* Render a link with the dynamicLink variable */}
+      {/* <p>Dynamic Link: <a href={dynamicLink} target="_blank" rel="noopener noreferrer">{dynamicLink}</a></p> */}
+    </ThemeProvider>
   );
-}
+};
+
+export default App;

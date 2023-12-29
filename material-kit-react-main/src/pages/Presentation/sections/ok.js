@@ -22,7 +22,7 @@ Coded by www.creative-tim.com
 export default [
     {
       
-      title: <div style={{ marginBottom: '-45px', margintop:"-10px" }}>
+      title: <div style={{ marginBottom: '10vm', margintop:"-10px" }}>
       <h1>Recent Journal Publications</h1>
     </div>,
       description: "30+ components that will help go through the pages",
