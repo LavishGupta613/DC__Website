@@ -18,9 +18,9 @@ function ExampleCard({ image, name, count, pro, des }) {
       
       borderRadius="10px"
       shadow="l1g"
-      width="18rem"
+      width="20vw"
       minHeight="12rem"
-      minWidth="18rem"
+      minWidth="20vw"
       sx={{
         overflow: "hidden",
         textAlign: "center",

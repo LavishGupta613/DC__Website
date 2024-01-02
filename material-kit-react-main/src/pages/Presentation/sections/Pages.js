@@ -14,7 +14,7 @@ import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
 function PresentationPages() {
   return (
     <div>
-    <div style={{ backgroundColor: '#F8F8F8' ,marginTop:"150px" }}>
+    <div style={{ backgroundColor: '#F8F8F8' ,marginTop:"10vh" }}>
     <MKBox component="section" py={10} style={{ backgroundColor: '#F8F8F8' ,marginBottom :"50px"}}>
       <Container >
         <Grid

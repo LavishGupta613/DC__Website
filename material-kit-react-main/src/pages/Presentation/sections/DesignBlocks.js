@@ -20,12 +20,13 @@ function DesignBlocks() {
           </MKTypography>
         </MKBox>
       </Grid>
-      <Grid item xs={2} lg={12}>
+      <Grid item xs={0} lg={12}>
         <Grid container spacing={3}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={1} md={3} sx={{ mb: 2 }} key={name}>
+            <Grid item xs={12} md={4} sm={6} lg={3} sx={{ mb: 2 }} key={name}>
               <Link to={route}>
                 <ExampleCard image={image} name={name} count={count} des={des} pro={pro} />
+                <div style={{marginLeft:"100px"}}></div>
               </Link>
             </Grid>
           ))}
@@ -35,7 +36,7 @@ function DesignBlocks() {
   ));
 
   return (
-    <MKBox component="section" my={-20} py={6}>
+    <MKBox component="section" my={-8} py={6}>
       <Container>
         <BuiltByDevelopers />
         <Grid
@@ -50,7 +51,12 @@ function DesignBlocks() {
           <MKBadge variant="contained" color="info" container sx={{ mb: 2 }} />
         </Grid>
       </Container>
-      <Container sx={{ mt: 6 }}>{renderData}</Container>
+      
+      <Container sx={{ mt: 0 }}>
+        
+          {renderData}
+       
+      </Container>
     </MKBox>
   );
 }

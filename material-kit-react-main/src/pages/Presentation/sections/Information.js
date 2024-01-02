@@ -52,7 +52,7 @@ function Information() {
             <MKBox style={{ backgroundColor: ''  ,textAlign:"justify"}}>
             <Container>
             <Grid container spacing={-2} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={19} md={26}>
+              <Grid item xs={12} md={26}>
                 <DefaultInfoCard
                   // icon={
                   //   <i className="fas fa-trophy" style={{ color: 'gold', fontSize: '20px' }}></i>

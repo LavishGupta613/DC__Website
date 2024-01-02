@@ -12,10 +12,11 @@ function ExampleCard1({ image, name, count, pro, des }) {
         display="flex"
         alignItems="left"
         bgColor="white"
-        borderRadius="5vw"
+        borderRadius={{ xs: "12px", md: "5vw" }}
         shadow="l1g"
-        width="75vw" 
+        width={{  md: "80vw" }}
         minHeight="8rem"
+        
         sx={{
           overflow: "hidden",
           textAlign: "center",
@@ -31,12 +32,12 @@ function ExampleCard1({ image, name, count, pro, des }) {
       >
         {/* Left Half - Image */}
         <MKBox
-          width="9vw" // Set the left half to 10%
+           width={{ xs: "30%", md: "9vw" }} // Set the left half to 10%
           minHeight="1vw"
           display="flex"
           justifyContent="center"
           alignItems="center"
-          borderRadius="10px 0 0 10px"
+          borderRadius={{ xs: "12px 12px 0 0", md: "12px 0 0 10px" }}
           style={{
             overflow: "hidden",
             borderRadius: "10px 0 0 10px",
@@ -54,14 +55,14 @@ function ExampleCard1({ image, name, count, pro, des }) {
 
         {/* Right Half - Name and Count */}
         <MKBox
-          width="78vw" // Set the right half to 78%
+          width={{ xs: "70%", md: "90vw" }} // Set the right half to 78%
           minHeight="100%"
           display="flex"
           flexDirection="column"
           justifyContent="center"
-          alignItems="flex-start" // Align text content to the left
-          paddingLeft="1vw" // Add left margin of 57px
-          borderRadius="0 10px 10px 0"
+          alignItems={{ xs: "center", md: "flex-start" }} // Align text content to the left
+          paddingLeft={{ xs: "0", md: "1vw" }}  // Add left margin of 57px
+          borderRadius={{ xs: "0 0 12px 12px", md: "0 10px 10px 0" }}
         >
           <MKTypography variant="h6" fontWeight="bold">
             {name}

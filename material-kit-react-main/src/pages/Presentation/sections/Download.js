@@ -1,4 +1,3 @@
-
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MailOutlineIcon from "@mui/icons-material/MailOutline"; 
@@ -18,13 +17,13 @@ function Download() {
 
             <section id="Photos1"></section>    Photos
               </MKTypography>
-              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-05-12-15-44-02.jpg" width="350px" height="250px" />
+              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-05-12-15-44-02.jpg" width="23vw" height="35vh" />
             </MKBox>
           </Grid>
           <Grid container item xs={12} lg={4} justifyContent="flex-start">
             <MKBox textAlign="left">
             
-              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/gallery00005.jpg" width="350px" height="250px" sx={{ marginLeft: '-60px' ,marginTop:'115px'}}/>
+              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/gallery00005.jpg" width="23vw" height="35vh" sx={{ marginLeft: '-4vw' ,marginTop:'17vh'}}/>
             </MKBox>
           </Grid>
           <Grid container item xs={12} lg={4} justifyContent="flex-start">
@@ -38,6 +37,7 @@ function Download() {
                 <LocationOnIcon /> Department of Computer Science,  IIT   Jodhpur, India
               </MKTypography>
               <MKTypography variant="body1">Room 215, 1st Floor</MKTypography>
+              
     <iframe
       width="110%"
       height="400"
@@ -52,13 +52,13 @@ function Download() {
           <Grid container item xs={1} lg={4} justifyContent="flex-start">
             <MKBox textAlign="left">
             
-              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-05-12-15-44-03.jpg" width="350px" height="250px" sx={{ marginLeft: '-210px' , marginTop :'-200px' }}/>
+              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-05-12-15-44-03.jpg" width="23vw" height="35vh" sx={{ marginLeft: '-210px' , marginTop :'-200px' }}/>
             </MKBox>
           </Grid>
           <Grid container item xs={12} lg={4} justifyContent="flex-start">
             <MKBox textAlign="left">
             
-              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-10-29-13-36-16.jpg" width="350px" height="250px" sx={{ marginLeft: '-270px' , marginTop :'-200px'}}/>
+              <MKBox component="img" src="https://ubisysresearch.github.io/home/photos/PHOTO-2022-10-29-13-36-16.jpg" width="23vw" height="35vh" sx={{ marginLeft: '-270px' , marginTop :'-200px'}}/>
             </MKBox>
           </Grid>
           </Grid>

@@ -19,10 +19,10 @@ function DesignBlocksp() {
           </MKTypography>
         </MKBox>
       </Grid>
-      <Grid item xs={2} lg={12}>
-        <Grid container spacing={-10}>
+      <Grid item xs={12} lg={0}>
+        <Grid container spacing={1}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={4} md={7} sx={{ mb: -4 }} key={name} >
+            <Grid item xs={12} lg={0} md={17} sx={{ mb: '-2vh' }} key={name} >
               <Link to={route}>
                 <ExampleCard1 image={image} name={name} count={count} des={des} pro={pro} />
                
@@ -35,10 +35,10 @@ function DesignBlocksp() {
       
       
   
-  <div style={{ textAlign: 'right', marginBottom: '60px' }}>
+      <div style={{ textAlign: 'right', marginBottom: '10vh', marginTop: '10px', marginLeft: 'auto' }}>
   <a
     href="http://127.0.0.1:3000/material-kit-react-main/src/pages/Presentation/sections/DC%20Publication/cse.iitkgp.ac.in/resgrp/ubinet/publications/project.html"
-    style={{ textDecoration: 'underline', marginLeft: "1100px" }}
+    style={{ textDecoration: 'underline',marginBottom:'10vh'}}
   >
     See All Publication
   </a>

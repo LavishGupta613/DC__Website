@@ -38,7 +38,7 @@ function BuiltByDevelopers() {
   //   textDecoration: 'none',
   // };
   return (
-    <div style={{ marginTop: "26vh" ,backgroundColor: '#F8F8F8'  ,marginLeft :"-5vw", marginRight :"-5vw" , marginBottom :"16vh"}} >
+    <div style={{ marginTop: "18vh" ,backgroundColor: '#F8F8F8'  ,marginLeft :"-5vw", marginRight :"-5vw" , marginBottom :"16vh"}} >
      
     <MKBox
       display="flex"
@@ -316,7 +316,7 @@ function BuiltByDevelopers() {
 
         </MKTypography>
         </Grid>
-        <Grid item xs={1} lg={7.5}>
+        <Grid item xs={12} lg={7.5}>
         <MKTypography variant="p" color="grey" style={{ marginLeft: '1px', fontFamily: 'Roboto, sans-serif' }}>
         <span 
     style={{ 
@@ -330,6 +330,8 @@ function BuiltByDevelopers() {
   >
     PI
   </span>
+  
+ 
       <DefaultCounterCard description=<div style={{fontSize : '18px' , textAlign: 'justify' }}>
      I am an Assistant Professor in the Department of <a href="https://cse.iitj.ac.in/"  style={{ color: 'blue' }}>Computer Science and Engineering</a>,
      <a href="https://www.iitj.ac.in/" style={{color : 'blue'}}> Indian Institute of Technology, Jodhpur </a>Since December 2020. My research interests are broadly in the domains of Ubiquitous Computing, IoT and Edge Computing, Wireless sensor and mobile ad hoc networks, Distributed Systems and Smart city applications. To know more about the work, please explore <a href="https://sites.google.com/site/suchetana0116/research" style={{color: 'blue'}}>this page</a>. I am one of the founding members of UbiSys Research Group, in the department and actively involved in interdisciplinary research through <a href="https://iitj.ac.in/shc/" style={{color : 'blue'}}>IDRP - Smart Healthcare</a>, <a href="https://iitj.ac.in/iot/" style={{color:'blue'}}>IDRP - IoT & Applications</a> and<a href="https://iitj.ac.in/CETSD/" style={{color : 'blue'}}> Centre of Emerging Technologies for Sustainable Development (CETSD)</a>. Currently, I am working as an Area Editor of Ad Hoc Networks journal, Elsevier. Also I am involved in organizing many conferences including IEEE ANTS 2021 (as Tutorial Co-chair), IEEE LCN 2021, 2022, 2023 (as TPC member), COMSNETS 2022, 2023 (as TPC member), ICDCN 2023 (as Workshop Co-chair) to name a few. </div>

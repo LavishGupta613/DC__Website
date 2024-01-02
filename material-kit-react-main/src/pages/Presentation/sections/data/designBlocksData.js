@@ -107,7 +107,7 @@ export default [
   },
   {
     title: <div>
-    <MKTypography variant="h4" fontWeight="bold" sx={{ position: 'sticky', marginTop: '10px' , marginBottom:"-80px" }}>
+    <MKTypography variant="h4" fontWeight="bold" sx={{ position: 'sticky', marginTop: '10px' , marginBottom:"-130px" }}>
       <section id="Current"></section>Executive Students
      </MKTypography>
     </div>,

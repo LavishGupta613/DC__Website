@@ -12,17 +12,17 @@ import data1 from './data';
 function DesignBlocks1() {
   const renderData = data1.map(({ title, items }) => (
     <Grid container spacing={0} sx={{ mb: -15 }} key={title}>
-      <Grid item xs={0} lg={0}>
-        <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 8 }}>
+      <Grid item xs={12} lg={0}>
+        <MKBox position="sticky" top="100px" pb={{ xs: 5, lg: 7 }}>
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
             {title}
           </MKTypography>
         </MKBox>
       </Grid>
-      <Grid item xs={2} lg={12}>
-        <Grid container spacing={-10}>
+      <Grid item xs={12} lg={0}>
+        <Grid container spacing={'-10vw'}>
           {items.map(({ image, name, count, des, route, pro }) => (
-            <Grid item xs={4} md={7} sx={{ mb: -4 }} key={name}>
+            <Grid item xs={12} lg={0} md={17} sx={{ mb: '-2vh' }} key={name}>
               <Link to={route}>
                 <ExampleCard1 image={image} name={name} count={count} des={des} pro={pro} />
               </Link>
