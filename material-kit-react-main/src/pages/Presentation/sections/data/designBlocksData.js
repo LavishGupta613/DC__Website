@@ -27,10 +27,10 @@ import MKTypography from "components/MKTypography";
 
 export default [
   {
-    title: <div><MKTypography variant="h2" fontWeight="bold" sx={{  position: 'sticky',marginTop: '-100px' , marginBottom:"-100px" }}>
-   <section id="Current"></section><div style={{  position: 'sticky'}}>Current Students</div>
+    title: <div><MKTypography variant="h2" fontWeight="bold" sx={{   marginTop: '-100px' , marginBottom:"-100px" }}>
+   <section id="Current"></section><div style={{ }}>Current Students</div>
  </MKTypography>
- <MKTypography variant="h4" fontWeight="bold" sx={{ position: 'sticky', marginTop: '100px' , marginBottom:"-60px" }}>
+ <MKTypography variant="h4" fontWeight="bold" sx={{  marginTop: '100px' , marginBottom:"-60px" }}>
    <section id="Current"></section>PhD Scholar
   </MKTypography>
  </div>,
@@ -81,7 +81,7 @@ export default [
   },
   {
     title: <div>
-  <MKTypography variant="h4" fontWeight="bold" sx={{ position: 'sticky', marginTop: '10px' , marginBottom:"-80px" }}>
+  <MKTypography variant="h4" fontWeight="bold" sx={{marginTop: '10px' , marginBottom:"-80px" }}>
     <section id="Current"></section>Part Time Phd Scholar
    </MKTypography>
   </div>,
@@ -107,7 +107,7 @@ export default [
   },
   {
     title: <div>
-    <MKTypography variant="h4" fontWeight="bold" sx={{ position: 'sticky', marginTop: '10px' , marginBottom:"-130px" }}>
+    <MKTypography variant="h4" fontWeight="bold" sx={{ marginTop: '10px' , marginBottom:"-130px" }}>
       <section id="Current"></section>Executive Students
      </MKTypography>
     </div>,

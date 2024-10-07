@@ -26,7 +26,7 @@ function DesignBlocks() {
             <Grid item xs={12} md={4} sm={6} lg={3} sx={{ mb: 2 }} key={name}>
               <Link to={route}>
                 <ExampleCard image={image} name={name} count={count} des={des} pro={pro} />
-                <div style={{marginLeft:"100px"}}></div>
+                <div style={{marginLeft:"10%"}}></div>
               </Link>
             </Grid>
           ))}
