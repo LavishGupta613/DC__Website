@@ -4,4 +4,4 @@ This repository contains the source code for the Usibsys website, a web applicat
 
 ## Demo Video
 
-To see a demo of the Usibsys site in action, [click here to watch the video](https://drive.google.com/drive/folders/1XYrf8).
+To see a demo of the Usibsys site in action, [click here to watch the video]([https://drive.google.com/drive/folders/1XYrf8](https://drive.google.com/drive/folders/1XYrf8CE2Bju0HsOnvTlEa9PO1AIMMBNL).
